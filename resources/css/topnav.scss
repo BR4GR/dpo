@@ -1,0 +1,15 @@
+@import 'variables';
+
+.topnav {
+    height: $navbar-height; // Use defined navbar height, e.g., 60px
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $navbar-background-color;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}

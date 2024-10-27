@@ -1,1 +1,51 @@
-@import "~bootstrap/scss/bootstrap";
+// Import partial SCSS files
+@import 'variables';
+@import 'topnav';
+@import 'sidenav';
+@import 'articles';
+
+// Global body styles
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    color: #666565;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content-container {
+    margin-left: $sidebar-width+50; // Ensure content starts after sidebar
+    margin-top: $navbar-height; // Ensure content starts below navbar
+    margin-right: auto; // Center content with left and right margins
+    margin-bottom: 20px; // Add space at the bottom
+    padding: 20px;
+    background: $container-background;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - #{$navbar-height}); // Ensure it takes up the remaining height
+    width: 80%; // Make the content container 80% of the remaining width
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: $primary-color;
+    color: $button-text-color;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: $secondary-color;
+}

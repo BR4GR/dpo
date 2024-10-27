@@ -1,0 +1,52 @@
+// Import variables
+@import 'variables';
+
+
+.article {
+
+    pre,
+    h1 {
+        color: $main-color;
+        text-align: center;
+    }
+
+    h2 {
+        color: $main-color;
+        border-bottom: 2px solid $main-color;
+        padding-bottom: 5px;
+    }
+
+    p,
+    ul {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    a {
+        color: $main-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: $background-color;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: $secondary-color;
+    }
+}

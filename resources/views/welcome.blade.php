@@ -1,121 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DPO</title>
-  <style>
-    body {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #000000;
-  color: white;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 16px; /* Set a fixed font size */
-}
-
-.navbar {
-  font-size: 16px; /* Fixed font size to prevent scaling */
-  font-family: 'Courier New', Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
-  background-color: #0a0000;
-  color: #fff;
-  text-decoration: none;
-  position: fixed;
-  width: 100%;
-  height: 120px; /* Fixed height */
-  top: 0px;
-  display: flex;
-  align-items: center; /* Vertically center the text */
-  padding-left: 20px; /* Add padding to align content as needed */
-}
-
-.sidebar {
-  font-size: 16px; /* Fixed font size to prevent scaling */
-  font-family: 'Courier New', Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
-  color: #fff;
-  background-color: #170000;
-  width: 200px; /* Fixed width */
-  position: fixed;
-  left: 0;
-  top: 120px; /* Matches the height of the navbar */
-  height: calc(100% - 90px);
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 10px; /* Add padding for better spacing */
-}
-
-.ascii-art {
-  margin-top: 120px; /* Adjust to avoid overlap with navbar */
-  text-align: center;
-}
-
-  </style>
-</head>
-
-<body>
-  <div class="navbar">
-    <pre>
-  ╔═══════╗   <span class="col2">╔════════════════════════<!--                                   -->══════════╗
-╔──╣<span > <a href="#" style="color:red; text-decoration:none">dpo</a></span> ╠═─<span id="textElement">─</span>══<span class="dbgoutlines"><span class="col2">╣</span><span style="color:#00ff00" class="subbtn">       Benjamin <a href="#">Wuermli</a>         </span></span><span class="col2">║</span>
-│ ╚═══════╝   <span class="col2">╚════════════════════════<!--                                   -->══════════╝
-│
-╚════════════════════════════════════════════════════════════════════╣#
-
-</span></span></span></span></span></pre>
-  </div>
-
-
-  <div class="sidebar">
+@section('content')
+<div class="container article">
 <pre>
-╔──<span class="sidebarlink">─&gt; <a href="https://spaces.technik.fhnw.ch/spaces/digitales-portfolio" style="color:red; text-decoration:none">dpo</a><span class="badge"></span></span>
-│   
-│ ╔═┼<span class="sidebarlink">─&gt; <a href="#1837" style="color:red; text-decoration:none">🏠</a><span class="badge"></span></span>
-│ ║ │
-│ │ ├<span class="sidebarlink">─&gt; <a href="#1943" style="color:red; text-decoration:none">🔥</a><span class="badge"></span></span>
-│ │ │
-│ │ ├<span class="sidebarlink">─&gt; <a href="#1965" style="color:red; text-decoration:none">✍🏻</a><span class="badge"></span></span>
-╚─╣ │
-  │ ├<span class="sidebarlink">─&gt; <a href="#1987" style="color:red; text-decoration:none">🚚</a><span class="badge"></span></span>
-  │ │
-  │ ├<span class="sidebarlink">─&gt; <a href="#1988" style="color:red; text-decoration:none">🍀</a><span class="badge"></span></span>
-  │ │
-  ╠─┼<span class="sidebarlink">─&gt; <a href="#1989" style="color:red; text-decoration:none">📝</a><span class="badge"></span></span>
-  │ │
-  │ └<span class="sidebarlink">─&gt; <a href="#1990" style="color:red; text-decoration:none">💵</a><span class="badge"></span></span>
-╔─╣
-│ │ ┌<span class="sidebarlink">─&gt; <a href="#1994" style="color:red; text-decoration:none">📦</a><span class="badge"></span></span>
-│ ║ │
-│ ╚═┼<span class="sidebarlink">─&gt; <a href="#2010" style="color:red; text-decoration:none">📬</a><span class="badge"></span></span>
-│   ║ 
-│   └<span class="sidebarlink">─&gt; <a href="#2022" style="color:red; text-decoration:none">🚢</a><span class="badge"></span></span>
-│
-╚═──═╗───══╣
-     ┴
-
+██╗    ██╗███████╗██╗     ██╗      ██████╗ ██████╗ ███╗   ███╗███████╗    ████████╗ ██████╗     ███╗   ███╗██╗   ██╗       
+██║    ██║██╔════╝██║     ██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝    ╚══██╔══╝██╔═══██╗    ████╗ ████║╚██╗ ██╔╝       
+██║ █╗ ██║█████╗  ██║     ██║     ██║     ██║   ██║██╔████╔██║█████╗         ██║   ██║   ██║    ██╔████╔██║ ╚████╔╝        
+██║███╗██║██╔══╝  ██║     ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝         ██║   ██║   ██║    ██║╚██╔╝██║  ╚██╔╝         
+╚███╔███╔╝███████╗███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗       ██║   ╚██████╔╝    ██║ ╚═╝ ██║   ██║          
+ ╚══╝╚══╝ ╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝       ╚═╝    ╚═════╝     ╚═╝     ╚═╝   ╚═╝          
+                                                                                                                           
+██████╗ ██╗ ██████╗ ██╗████████╗ █████╗ ██╗         ██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗ 
+██╔══██╗██║██╔════╝ ██║╚══██╔══╝██╔══██╗██║         ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗
+██║  ██║██║██║  ███╗██║   ██║   ███████║██║         ██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║
+██║  ██║██║██║   ██║██║   ██║   ██╔══██║██║         ██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║
+██████╔╝██║╚██████╔╝██║   ██║   ██║  ██║███████╗    ██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝
+╚═════╝ ╚═╝ ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝ 
 </pre>
-  </div>
 
-  <div class="ascii-art">
-<pre>
-██████╗ ██╗ ██████╗ ██╗████████╗ █████╗ ██╗     ███████╗███████╗       
-██╔══██╗██║██╔════╝ ██║╚══██╔══╝██╔══██╗██║     ██╔════╝██╔════╝       
-██║  ██║██║██║  ███╗██║   ██║   ███████║██║     █████╗  ███████╗       
-██║  ██║██║██║   ██║██║   ██║   ██╔══██║██║     ██╔══╝  ╚════██║       
-██████╔╝██║╚██████╔╝██║   ██║   ██║  ██║███████╗███████╗███████║       
-╚═════╝ ╚═╝ ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝       
-                                                                       
-██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗ 
-██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗
-██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║
-██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║
-██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝
-╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝ 
-</pre>
-  </div>
-</body>
+  <p>Hello and welcome to my Digital Portfolio (DPO)! Here, I showcase my journey through my studies, my skills, and my professional aspirations. This portfolio is not just a collection of my work, but a reflection of my growth, achievements, and goals as I prepare for my future career.</p>
 
-</html>
+  <h2>About Me</h2>
+  <p>My name is Benjamin Würmli, and I'm currently a student at FHNW. My passion lies in applying technology to solve real-world problems, particularly in areas related to data science, visualization, and web development. In this portfolio, you can find various projects I've worked on, reflections on my learning, and insights into what motivates me.</p>
+
+  <h2>What You Will Find Here</h2>
+  <ul>
+    <li><strong>Personal Page</strong>: Get to know me better, including my background, my skills, and what drives me forward.</li>
+    <li><strong>Blog</strong>: Here, I reflect on my learning journey. You'll find posts like my skills audit, my thoughts on relevant job opportunities, and other reflections on my professional growth.</li>
+    <li><strong>Projects</strong>: A showcase of the projects I've worked on during my studies. Each project includes a brief description and the skills I applied to solve the problems.</li>
+    <li><strong>CV and Career Interests</strong>: I have included a link to my updated CV and information about my career interests, highlighting my preparedness for the professional world.</li>
+  </ul>
+
+  <h2>Continuous Growth</h2>
+  <p>This digital portfolio is a living document—as I learn new skills and complete new projects, I will continue to update it to reflect my progress. Feel free to explore, and if you have any questions or want to collaborate, don't hesitate to reach out.</p>
+
+  <p>Thanks for visiting my DPO, and I hope you enjoy exploring my work!</p>
+</div>
+@endsection

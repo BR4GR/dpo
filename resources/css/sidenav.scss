@@ -1,0 +1,14 @@
+@import 'variables';
+
+.sidenav {
+    width: $sidebar-width; // Use defined sidebar width, e.g., 200px
+    height: calc(100vh - #{$navbar-height});
+    position: fixed;
+    top: $navbar-height; // Align below the navbar
+    left: 0;
+    background-color: $navbar-background-color;
+    color: $text-color;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 900;
+}
