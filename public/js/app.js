@@ -14571,11 +14571,59 @@ __webpack_require__.r(__webpack_exports__);
 // Import custom JavaScript setup (axios and other setups)
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('a[href^="http"]').forEach(function (link) {
-    if (!link.href.includes(location.hostname)) {
-      link.setAttribute('target', '_blank');
+  var commandInput = document.getElementById("command-input");
+
+  // Initial update of the terminal path based on the current URL
+  updateTerminalPath();
+
+  // Add event listener for user navigation using command input
+  commandInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleCommand(commandInput.innerText.trim());
     }
   });
+
+  // Add event listener for popstate to update the terminal when navigating with back/forward buttons
+  window.addEventListener("popstate", function () {
+    updateTerminalPath();
+  });
+
+  // Add click event listeners to all menu links to update terminal when navigating
+  document.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      // Allow navigation but also update the terminal path after a slight delay
+      setTimeout(updateTerminalPath, 100);
+    });
+  });
+  function performSearch(query) {
+    if (query) {
+      var url = "/search?query=".concat(encodeURIComponent(query));
+      window.location.href = url;
+      updateTerminalPath("~/pdo/search-results find ".concat(query));
+    }
+  }
+  function updateTerminalPath() {
+    var path = window.location.pathname.replace(/^\//, '');
+    var terminalPath = "visitor@pdo-site ~/pdo/".concat(path || "");
+
+    // Update the terminal prompt with the current path
+    var terminalPromptElement = document.querySelector(".terminal-prompt");
+    if (terminalPromptElement) {
+      terminalPromptElement.innerHTML = "".concat(terminalPath, " <span id=\"command-input\" contenteditable=\"true\" class=\"command-input\"></span>");
+      // Reattach event listener to the new input
+      var newCommandInput = document.getElementById("command-input");
+      newCommandInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          performSearch(newCommandInput.innerText.trim());
+        }
+      });
+    }
+  }
+  function updateTerminalOutput(message) {
+    alert(message); // For simplicity, you can replace this with a more elegant UI update if preferred
+  }
 });
 
 /***/ }),

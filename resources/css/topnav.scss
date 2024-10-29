@@ -13,3 +13,18 @@
     padding: 0 20px;
     z-index: 1000;
 }
+
+.terminal-prompt {
+    color: #00ff0077;
+    background-color: #000000;
+    margin-left: 10px;
+}
+
+.command-input {
+    outline: none;
+    border: none;
+    color: #00ff00; // Match terminal green
+    background: transparent;
+    caret-color: #00ff00; // Green caret
+    font-family: inherit;
+}

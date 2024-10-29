@@ -12,6 +12,21 @@
   z-index: 1000;
 }
 
+.terminal-prompt {
+  color: rgba(0, 255, 0, 0.4666666667);
+  background-color: #000000;
+  margin-left: 10px;
+}
+
+.command-input {
+  outline: none;
+  border: none;
+  color: #00ff00;
+  background: transparent;
+  caret-color: #00ff00;
+  font-family: inherit;
+}
+
 .sidenav {
   width: 160px;
   height: calc(100vh - 120px);
