@@ -14621,9 +14621,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
-  function updateTerminalOutput(message) {
-    alert(message); // For simplicity, you can replace this with a more elegant UI update if preferred
-  }
 });
 
 /***/ }),

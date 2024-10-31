@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background-color: #000000;
-  color: #b8b9b7;
+  color: rgba(207, 255, 204, 0.8784313725);
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -25,17 +25,18 @@
   background: transparent;
   caret-color: #00ff00;
   font-family: inherit;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+  border-radius: 3px;
+  padding: 5px;
 }
 
 .sidenav {
   width: 160px;
-  height: calc(100vh - 120px);
   position: fixed;
   top: 120px;
   left: 0;
   background-color: #000000;
-  color: #b8b9b7;
-  padding: 20px;
+  color: rgba(207, 255, 204, 0.8784313725);
   overflow: hidden;
   z-index: 900;
 }
@@ -80,16 +81,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: monospace;
   background-color: #000000;
-  color: #666565;
+  color: rgba(207, 255, 204, 0.8784313725);
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
 .content-container {
-  margin-left: 210px;
+  margin-left: 160px;
   margin-top: 120px;
   margin-right: auto;
   margin-bottom: 20px;
@@ -121,4 +122,12 @@ a:hover {
 
 .button:hover {
   background-color: #0d8102;
+}
+
+.MathJax {
+  color: #00ff00;
+  background-color: transparent;
+  padding: 2px 4px;
+  border-radius: 3px;
+  white-space: nowrap;
 }

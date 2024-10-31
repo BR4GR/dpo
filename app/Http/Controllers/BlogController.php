@@ -16,4 +16,8 @@ class BlogController extends Controller
         return view('welcome');
     }
 
+    public function spektralsatz()
+    {
+        return view('spektralsatz');
+    }
 }
