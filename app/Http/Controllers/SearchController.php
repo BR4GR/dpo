@@ -13,32 +13,21 @@ class SearchController extends Controller
         $viewsPath = resource_path('views');
         $excludedDirectories = ['components', 'layouts'];
         $results = [];
-        var_dump($viewsPath);
+
 
         if (empty($query)) {
             return view('search.results', ['query' => $query, 'results' => $results]);
         }
 
         // Recursively search files in views directory, excluding specific subdirectories
-        $files = File::allFiles($viewsPath);
+        $files = File::files($viewsPath);
         foreach ($files as $file) {
             $relativePath = str_replace($viewsPath . '/', '', $file->getPathname());
             $excluded = false;
 
-            // Exclude files in specified directories
-            foreach ($excludedDirectories as $excludedDirectory) {
-                if (strpos($relativePath, $excludedDirectory . '/') === 0) {
-                    $excluded = true;
-                    break;
-                }
-            }
-
-            if ($excluded || $file->getExtension() !== 'blade.php') {
-                continue;
-            }
-
             // Search content in the view file
             $content = strtolower($file->getContents());
+
             if (strpos($content, $query) !== false) {
                 $results[] = [
                     'filename' => $relativePath,
