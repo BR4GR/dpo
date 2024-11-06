@@ -1,7 +1,5 @@
 // Import partial SCSS files
 @import 'variables';
-@import 'topnav';
-@import 'sidenav';
 @import 'articles';
 
 // Global body styles
@@ -16,15 +14,12 @@ body {
 
 
 .content-container {
-    margin-left: $sidebar-width; // Ensure content starts after sidebar
-    margin-top: $navbar-height; // Ensure content starts below navbar
-    margin-right: auto; // Center content with left and right margins
-    margin-bottom: 20px; // Add space at the bottom
+    margin: $navbar-height auto 20px $sidebar-width;
     padding: 20px;
     background: $container-background;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-height: calc(100vh - #{$navbar-height}); // Ensure it takes up the remaining height
-    width: 80%; // Make the content container 80% of the remaining width
+    min-height: calc(100vh - #{$navbar-height});
+    width: 80%;
 }
 
 a {
@@ -48,25 +43,4 @@ a:hover {
 
 .button:hover {
     background-color: $secondary-color;
-}
-
-// .math-equation {
-//     display: block;
-//     font-family: 'Courier New', Courier, monospace; // Monospaced font to match terminal
-//     background-color: #0a0a0a; // Dark terminal-like background
-//     color: #00ff00; // Neon green to match terminal text
-//     padding: 10px;
-//     margin: 20px 0;
-//     border-radius: 5px;
-//     text-align: left;
-//     overflow-x: auto; // Handle long equations that extend beyond the viewport
-//     box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); // Add a glowing effect for emphasis
-// }
-
-.MathJax {
-    color: #00ff00; // Neon green color for terminal effect
-    background-color: transparent; // Keep inline background transparent
-    padding: 2px 4px; // Slight padding for readability
-    border-radius: 3px;
-    white-space: nowrap; // Prevent wrapping for inline math
 }

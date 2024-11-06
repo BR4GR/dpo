@@ -49,4 +49,12 @@
     .button:hover {
         background-color: $secondary-color;
     }
+
+    .MathJax {
+        color: #00ff00; // Neon green color for terminal effect
+        background-color: transparent; // Keep inline background transparent
+        padding: 2px 4px; // Slight padding for readability
+        border-radius: 3px;
+        white-space: nowrap; // Prevent wrapping for inline math
+    }
 }

@@ -25,10 +25,11 @@
 
         <p>Hello and welcome to my Digital Portfolio (DPO)! Here, I showcase my journey through my studies, my skills,
             and my professional aspirations. This portfolio is not just a collection of my work, but a reflection of my
-            growth, achievements, and goals as I prepare for my future career.</p>
+            growth, achievements, and goals as I prepare for my career.</p>
 
         <h2>About Me</h2>
-        <p>My name is Benjamin Würmli, and I'm currently a student at FHNW. My passion lies in applying technology to
+        <p>My name is Benjamin, and I'm currently a student at <a href="https://www.fhnw.ch/en/">FHNW</a>. My passion
+            lies in applying technology to
             solve real-world problems, particularly in areas related to data science, visualization, and web
             development. In this portfolio, you can find various projects I've worked on, reflections on my learning,
             and insights into what motivates me.</p>

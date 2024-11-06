@@ -14565,62 +14565,28 @@ const asap = typeof queueMicrotask !== 'undefined' ?
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
 /* harmony import */ var _bootstrap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bootstrap.js */ "./resources/js/bootstrap.js");
-// Import Bootstrap JavaScript
+/* harmony import */ var _terminal_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./terminal.js */ "./resources/js/terminal.js");
+/* harmony import */ var _css_app_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/app.scss */ "./resources/css/app.scss");
+/**
+ * @file app.js Main Entry for the DPO frontend ES6 system.
+ *
+ * From here, we import all other classes and compile everything to one JS file.
+ */
 
 
-// Import custom JavaScript setup (axios and other setups)
 
+// import MatrixLoading from "./matrix.js";
+// Import the main/root SCSS file to compile all styles.
+
+var apps = [_terminal_js__WEBPACK_IMPORTED_MODULE_2__["default"]];
+
+// Ensure that all apps are only executed after the document is ready.
 document.addEventListener("DOMContentLoaded", function () {
-  var commandInput = document.getElementById("command-input");
-
-  // Initial update of the terminal path based on the current URL
-  updateTerminalPath();
-
-  // Add event listener for user navigation using command input
-  commandInput.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      handleCommand(commandInput.innerText.trim());
+  apps.forEach(function (appClass) {
+    if (typeof appClass.applies === 'function' && appClass.applies()) {
+      new appClass();
     }
   });
-
-  // Add event listener for popstate to update the terminal when navigating with back/forward buttons
-  window.addEventListener("popstate", function () {
-    updateTerminalPath();
-  });
-
-  // Add click event listeners to all menu links to update terminal when navigating
-  document.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      // Allow navigation but also update the terminal path after a slight delay
-      setTimeout(updateTerminalPath, 100);
-    });
-  });
-  function performSearch(query) {
-    if (query) {
-      var url = "/search?query=".concat(encodeURIComponent(query));
-      window.location.href = url;
-      updateTerminalPath("~/pdo/search-results find ".concat(query));
-    }
-  }
-  function updateTerminalPath() {
-    var path = window.location.pathname.replace(/^\//, '');
-    var terminalPath = "visitor@pdo-site ~/pdo/".concat(path || "");
-
-    // Update the terminal prompt with the current path
-    var terminalPromptElement = document.querySelector(".terminal-prompt");
-    if (terminalPromptElement) {
-      terminalPromptElement.innerHTML = "".concat(terminalPath, " <span id=\"command-input\" contenteditable=\"true\" class=\"command-input\"></span>");
-      // Reattach event listener to the new input
-      var newCommandInput = document.getElementById("command-input");
-      newCommandInput.addEventListener("keydown", function (e) {
-        if (e.key === "Enter") {
-          e.preventDefault();
-          performSearch(newCommandInput.innerText.trim());
-        }
-      });
-    }
-  }
 });
 
 /***/ }),
@@ -14637,6 +14603,158 @@ __webpack_require__.r(__webpack_exports__);
 
 window.axios = axios__WEBPACK_IMPORTED_MODULE_0__["default"];
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+/***/ }),
+
+/***/ "./resources/js/terminal.js":
+/*!**********************************!*\
+  !*** ./resources/js/terminal.js ***!
+  \**********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ DpoTerminal)
+/* harmony export */ });
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _classPrivateFieldInitSpec(e, t, a) { _checkPrivateRedeclaration(e, t), t.set(e, a); }
+function _checkPrivateRedeclaration(e, t) { if (t.has(e)) throw new TypeError("Cannot initialize the same private elements twice on an object"); }
+function _classPrivateFieldGet(s, a) { return s.get(_assertClassBrand(s, a)); }
+function _classPrivateFieldSet(s, a, r) { return s.set(_assertClassBrand(s, a), r), r; }
+function _assertClassBrand(e, t, n) { if ("function" == typeof e ? e === t : e.has(t)) return arguments.length < 3 ? t : n; throw new TypeError("Private element is not present on this object"); }
+var _commandInput = /*#__PURE__*/new WeakMap();
+var DpoTerminal = /*#__PURE__*/function () {
+  function DpoTerminal() {
+    _classCallCheck(this, DpoTerminal);
+    // Private class variables.
+    _classPrivateFieldInitSpec(this, _commandInput, void 0);
+    this.initializeTerminal();
+    this.addEventListeners();
+    // Focus on the command input field
+    setTimeout(function () {
+      var commandInput = document.getElementById("command-input");
+      if (commandInput) {
+        commandInput.focus();
+      }
+    }, 100);
+  }
+
+  /**
+   * Initializes the terminal UI elements.
+   */
+  return _createClass(DpoTerminal, [{
+    key: "initializeTerminal",
+    value: function initializeTerminal() {
+      // Initial update of the terminal path based on the current URL
+      this.updateTerminalPath();
+    }
+
+    /**
+     * Adds event listeners for terminal and navigation interactions.
+     */
+  }, {
+    key: "addEventListeners",
+    value: function addEventListeners() {
+      var _this = this;
+      document.addEventListener("DOMContentLoaded", function () {
+        _classPrivateFieldSet(_commandInput, _this, document.getElementById("command-input"));
+        if (_classPrivateFieldGet(_commandInput, _this)) {
+          _classPrivateFieldGet(_commandInput, _this).addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              _this.performSearch(_classPrivateFieldGet(_commandInput, _this).innerText.trim());
+            }
+          });
+        }
+
+        // Add event listener for popstate to update the terminal when navigating with back/forward buttons
+        window.addEventListener("popstate", function () {
+          _this.updateTerminalPath();
+        });
+
+        // Add click event listeners to all menu links to update terminal when navigating
+        document.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function (e) {
+            // Allow navigation but also update the terminal path after a slight delay
+            setTimeout(function () {
+              return _this.updateTerminalPath();
+            }, 100);
+          });
+        });
+      });
+    }
+
+    /**
+     * Handles the commands entered by the user.
+     * @param {string} command - The command entered by the user.
+     */
+  }, {
+    key: "handleCommand",
+    value: function handleCommand(command) {
+      if (command.startsWith('find ')) {
+        var query = command.replace('find ', '').trim();
+        this.performSearch(query);
+      }
+    }
+
+    /**
+     * Performs a search based on the user's command.
+     * @param {string} query - The search query.
+     */
+  }, {
+    key: "performSearch",
+    value: function performSearch(query) {
+      if (query) {
+        var url = "/search?query=".concat(encodeURIComponent(query));
+        window.location.href = url;
+        this.updateTerminalPath("~/pdo/search-results find ".concat(query));
+      }
+    }
+
+    /**
+     * Updates the terminal path to reflect the current URL.
+     */
+  }, {
+    key: "updateTerminalPath",
+    value: function updateTerminalPath() {
+      var _this2 = this;
+      var path = window.location.pathname.replace(/^\//, '');
+      var terminalPath = "".concat(path || "");
+
+      // Update the terminal prompt with the current path
+      var terminalPromptElement = document.querySelector(".terminal-prompt");
+      if (terminalPromptElement) {
+        terminalPromptElement.innerHTML = "".concat(terminalPath, " <span id=\"command-input\" contenteditable=\"true\" class=\"command-input\"></span>");
+
+        // Reattach event listener to the new input
+        _classPrivateFieldSet(_commandInput, this, document.getElementById("command-input"));
+        if (_classPrivateFieldGet(_commandInput, this)) {
+          _classPrivateFieldGet(_commandInput, this).addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              _this2.performSearch(_classPrivateFieldGet(_commandInput, _this2).innerText.trim());
+            }
+          });
+        }
+      }
+    }
+  }], [{
+    key: "applies",
+    value:
+    // Static method to check if the class should be loaded.
+    // This method returns true if the terminal container exists on the page.
+    function applies() {
+      return document.querySelector('.terminal-prompt') !== null;
+    }
+  }]);
+}();
+
 
 /***/ })
 

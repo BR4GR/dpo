@@ -1,46 +1,3 @@
-.topnav {
-  height: 120px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  color: rgba(207, 255, 204, 0.8784313725);
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  z-index: 1000;
-}
-
-.terminal-prompt {
-  color: rgba(0, 255, 0, 0.4666666667);
-  background-color: #000000;
-  margin-left: 10px;
-}
-
-.command-input {
-  outline: none;
-  border: none;
-  color: #00ff00;
-  background: transparent;
-  caret-color: #00ff00;
-  font-family: inherit;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
-  border-radius: 3px;
-  padding: 5px;
-}
-
-.sidenav {
-  width: 160px;
-  position: fixed;
-  top: 120px;
-  left: 0;
-  background-color: #000000;
-  color: rgba(207, 255, 204, 0.8784313725);
-  overflow: hidden;
-  z-index: 900;
-}
-
 .article pre,
 .article h1 {
   color: #48b300;
@@ -79,6 +36,13 @@
 .article .button:hover {
   background-color: #0d8102;
 }
+.article .MathJax {
+  color: #00ff00;
+  background-color: transparent;
+  padding: 2px 4px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
 
 body {
   font-family: monospace;
@@ -90,10 +54,7 @@ body {
 }
 
 .content-container {
-  margin-left: 160px;
-  margin-top: 120px;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 120px auto 20px 160px;
   padding: 20px;
   background: #000000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -102,7 +63,7 @@ body {
 }
 
 a {
-  color: #64c514;
+  color: #5ab211;
   text-decoration: none;
 }
 
@@ -114,7 +75,7 @@ a:hover {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: #64c514;
+  background-color: #5ab211;
   color: #00410e;
   text-decoration: none;
   border-radius: 5px;
@@ -122,12 +83,4 @@ a:hover {
 
 .button:hover {
   background-color: #0d8102;
-}
-
-.MathJax {
-  color: #00ff00;
-  background-color: transparent;
-  padding: 2px 4px;
-  border-radius: 3px;
-  white-space: nowrap;
 }

@@ -1,6 +1,6 @@
 @import 'variables';
 
-.topnav {
+.top-bar {
     height: $navbar-height; // Use defined navbar height, e.g., 60px
     width: 100%;
     position: fixed;
@@ -8,26 +8,23 @@
     left: 0;
     background-color: $navbar-background-color;
     color: $text-color;
-    display: flex;
     align-items: center;
-    padding: 0 20px;
     z-index: 1000;
 }
 
 .terminal-prompt {
-    color: #00ff0077;
+    color: $text-color;
     background-color: #000000;
-    margin-left: 10px;
 }
 
 .command-input {
     outline: none;
     border: none;
-    color: #00ff00; // Match terminal green
+    color: $text-color;
     background: transparent;
     caret-color: #00ff00; // Green caret
     font-family: inherit;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
     border-radius: 3px;
     padding: 5px;
 
