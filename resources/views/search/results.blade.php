@@ -1,19 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <h1>Search Results for "{{ $query }}"</h1>
+<div class="container search-results">
+    <h2>Search Results for "{{ $query }}"</h2>
 
-        @if (count($results) > 0)
-            <ul>
-                @foreach ($results as $result)
-                    <li>
-                        <a href="{{ $result['url'] }}">{{ $result['filename'] }}</a>
-                    </li>
-                @endforeach
-            </ul>
-        @else
-            <p>No results found for your query.</p>
-        @endif
-    </div>
+    @if (empty($results))
+    <p>No results found for "{{ $query }}". Please try another search.</p>
+    @else
+    <ul class="results-list">
+        @foreach ($results as $result)
+        <li class="result-item" title="{{ $result['preview'] }}">
+            <a href="{{ $result['url'] }}" class="result-link">
+                <i class="fa fa-file-code-o"></i> {{ $result['friendly_name'] }}
+            </a>
+        </li>
+        @endforeach
+    </ul>
+    @endif
+</div>
 @endsection

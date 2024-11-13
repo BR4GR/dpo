@@ -1,0 +1,44 @@
+#search-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    z-index: 1000;
+    width: 40vw;
+    max-height: 70vh;
+    overflow-y: auto;
+
+    .search-results-header {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .search-result-item {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #333;
+        }
+
+        .result-title {
+            font-weight: bold;
+            color: #00ff00; // Green for terminal-like highlighting
+        }
+
+        .result-preview {
+            color: #bfbfbf; // Light grey for less emphasis
+        }
+    }
+
+    .no-results {
+        color: #ff4d4d; // Red to indicate no results found
+        text-align: center;
+    }
+}

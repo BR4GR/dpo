@@ -20,4 +20,19 @@ class BlogController extends Controller
     {
         return view('spektralsatz');
     }
+
+    public function jobOpening()
+    {
+        return view('job-opening');
+    }
+
+    public function projects()
+    {
+        return view('projects');
+    }
+
+    public function raw($slug)
+    {
+        return view($slug)->with('layout', 'raw');
+    }
 }

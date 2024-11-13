@@ -7,42 +7,37 @@ use Illuminate\Support\Facades\File;
 
 class SearchController extends Controller
 {
-    public function search(Request $request)
+    public function apiSearch(Request $request)
     {
         $query = strtolower($request->input('query', ''));
         $viewsPath = resource_path('views');
-        $excludedDirectories = ['components', 'layouts'];
         $results = [];
 
-
         if (empty($query)) {
-            return view('search.results', ['query' => $query, 'results' => $results]);
+            return response()->json(['results' => $results]);
         }
 
         // Recursively search files in views directory, excluding specific subdirectories
         $files = File::files($viewsPath);
         foreach ($files as $file) {
             $relativePath = str_replace($viewsPath . '/', '', $file->getPathname());
-            $excluded = false;
-
-            // Search content in the view file
-            $content = strtolower($file->getContents());
+            $content = strtolower(strip_tags($file->getContents()));
 
             if (strpos($content, $query) !== false) {
-                $results[] = [
-                    'filename' => $relativePath,
-                    'url' => $this->convertPathToRoute($relativePath),
-                ];
+
+                preg_match_all('/.{0,50}' . preg_quote($query, '/') . '.{0,50}/i', $content, $matches);
+
+                foreach ($matches[0] as $match) {
+                    $results[] = [
+                        'filename' => $relativePath,
+                        'url' => str_replace(['.blade.php'], [''], $relativePath),
+                        'friendly_name' => ucwords(str_replace(['-', '_', '.blade.php'], [' ', ' ', ''], $relativePath)),
+                        'preview' => trim($match),
+                    ];
+                }
             }
         }
 
-        return view('search.results', ['query' => $query, 'results' => $results]);
-    }
-
-    private function convertPathToRoute($path)
-    {
-        // Convert the Blade file path to a route URL, assuming conventional routes
-        $route = str_replace(['.blade.php', '/'], ['', '.'], $path);
-        return url($route);
+        return response()->json(['results' => $results]);
     }
 }

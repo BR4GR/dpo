@@ -5,9 +5,12 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SearchController;
 
 Route::get('/', [BlogController::class, 'welcome'])->name('home');
-Route::get('/welcome', [BlogController::class, 'welcome'])->name('home');
-
+Route::get('/welcome', [BlogController::class, 'welcome'])->name('welcome');
 Route::get('/skills-audit', [BlogController::class, 'skillsAudit'])->name('skills.audit');
 Route::get('/spektralsatz', [BlogController::class, 'spektralsatz'])->name('spektralsatz');
+Route::get('/job-opening', [BlogController::class, 'jobOpening'])->name('job.opening');
 
-Route::get('/search', [SearchController::class, 'search'])->name('search');
+Route::get('/projects', [BlogController::class, 'projects'])->name('projects');
+Route::get('/raw/{slug}', [BlogController::class, 'raw'])->name('raw');
+
+Route::get('/api/search', [SearchController::class, 'apiSearch'])->name('api.search');

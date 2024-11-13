@@ -1,0 +1,57 @@
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none; // Hide scrollbar using SCSS
+}
+
+
+
+.content-container {
+    margin: $navbar-height auto 20px $sidebar-width;
+    padding: 20px;
+    background: $container-background;
+    min-height: calc(100vh - #{$navbar-height});
+    width: 80%;
+}
+
+.raw-content-container {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    h2,
+    h3,
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: $primary-color;
+    color: $button-text-color;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: $secondary-color;
+}

@@ -1,46 +1,10 @@
 // Import partial SCSS files
 @import 'variables';
+@import 'base';
 @import 'articles';
-
-// Global body styles
-body {
-    font-family: $font-family;
-    background-color: $background-color;
-    color: $text-color;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-
-.content-container {
-    margin: $navbar-height auto 20px $sidebar-width;
-    padding: 20px;
-    background: $container-background;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-height: calc(100vh - #{$navbar-height});
-    width: 80%;
-}
-
-a {
-    color: $primary-color;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: $primary-color;
-    color: $button-text-color;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color: $secondary-color;
-}
+@import 'topbar';
+@import 'sidebar';
+@import 'articles';
+@import 'matrix';
+@import 'projects';
+@import 'search-modal';

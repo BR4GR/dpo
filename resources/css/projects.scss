@@ -1,0 +1,65 @@
+.projects-container {
+    display: flex;
+    justify-content: center; // Center the cards horizontally
+    gap: 5%; // Space between the cards
+    flex-wrap: wrap;
+    padding: 20px;
+
+    .project-card {
+        flex: 1 1 40%; // Responsive card width with gap included
+        max-width: 600px; // Set a maximum width to maintain layout consistency
+        background: transparent;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none; // No underline for links
+        margin-bottom: 30px; // Add spacing between rows
+        height: calc(100% * 1.5); // Set the height to be 1.5 times the width
+        font-size: 0.4rem;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+
+        .project-raw {
+            width: 100%;
+            overflow: hidden; // Hide overflowing content
+            position: relative;
+            pointer-events: none;
+
+            height: 150%;
+            min-height: 500px;
+
+            iframe {
+                width: 90%; // Initial raw is slightly narrower than the card
+                border: none;
+                margin: 5% auto; // Center the iframe within the container
+                display: block; // For centering purposes
+                pointer-events: none; // Disable interactions inside the iframe
+            }
+        }
+
+        .project-title {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #00ff00; // Green text
+            text-align: center;
+        }
+
+        .project-description {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #bfbfbf; // Light grey text
+            text-align: center; // Center the text inside the description
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects-container .project-card {
+        flex: 1 1 100%; // Make cards full width on small screens
+    }
+}
