@@ -13,7 +13,10 @@
 |  ╚════╝  ╚═════╝ ╚═════╝      ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝  |
 '----------------------------------------------------------------------------------------'
 
-        </pre>
+</pre>
+
+
+
     <h1>Backend Engineer (Web Scraping & Data Extraction Specialist) - Similarweb</h1>
 
     <h2>Why This Role Interests Me</h2>

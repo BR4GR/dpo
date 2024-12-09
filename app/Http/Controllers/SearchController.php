@@ -21,7 +21,12 @@ class SearchController extends Controller
         $files = File::files($viewsPath);
         foreach ($files as $file) {
             $relativePath = str_replace($viewsPath . '/', '', $file->getPathname());
-            $content = strtolower(strip_tags($file->getContents()));
+
+            // Get the content and remove Blade directives and tags
+            $content = strtolower($file->getContents());
+            // Remove lines starting with '@' ex. @section('content')
+            $content = preg_replace('/@.*/', '', $content);
+            $content = strip_tags($content); // Remove HTML tags
 
             if (strpos($content, $query) !== false) {
 

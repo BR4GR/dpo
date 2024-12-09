@@ -25399,15 +25399,10 @@ var DpoTerminal = /*#__PURE__*/function () {
       var _this = this;
       jquery__WEBPACK_IMPORTED_MODULE_0__(document).ready(function () {
         _classPrivateFieldSet(_$commandInput, _this, jquery__WEBPACK_IMPORTED_MODULE_0__('#command-input'));
-        if (_classPrivateFieldGet(_$commandInput, _this).length) {
-          _classPrivateFieldGet(_$commandInput, _this).on('keydown', function (e) {
-            if (e.key === "Enter") {
-              e.preventDefault();
-              _this.handleCommand(_classPrivateFieldGet(_$commandInput, _this).text().trim());
-            } else {
-              _this.performLiveSearch(_classPrivateFieldGet(_$commandInput, _this).text().trim());
-            }
-          });
+        var searchQuery = sessionStorage.getItem('scrollQuery');
+        if (searchQuery) {
+          _this.scrollToSearchResult(searchQuery);
+          sessionStorage.removeItem('scrollQuery'); // Clear it after use
         }
         jquery__WEBPACK_IMPORTED_MODULE_0__(window).on('popstate', function () {
           _this.updateTerminalPath();
@@ -25416,6 +25411,14 @@ var DpoTerminal = /*#__PURE__*/function () {
           setTimeout(function () {
             return _this.updateTerminalPath();
           }, 100);
+        });
+        jquery__WEBPACK_IMPORTED_MODULE_0__(document).on('click', '.search-result-item', function (e) {
+          var url = jquery__WEBPACK_IMPORTED_MODULE_0__(e.currentTarget).data('url');
+          var previewText = jquery__WEBPACK_IMPORTED_MODULE_0__(e.currentTarget).find('.result-preview').text();
+          if (url) {
+            sessionStorage.setItem('scrollQuery', previewText);
+            window.location.href = url;
+          }
         });
 
         // Close modal if clicking outside it or pressing 'Esc'
@@ -25463,31 +25466,24 @@ var DpoTerminal = /*#__PURE__*/function () {
     /**
      * Performs a live search based on the user's command.
      * @param {string} query - The search query.
-     * @param {boolean} scrollToResult - Whether to scroll to the result on the page.
      */
   }, {
     key: "performLiveSearch",
     value: function performLiveSearch(query) {
       var _this3 = this;
-      var scrollToResult = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
       if (query.length > 0) {
         jquery__WEBPACK_IMPORTED_MODULE_0__.get("/api/search?query=".concat(encodeURIComponent(query)), function (data) {
           var resultsHtml = '';
           if (data.results && data.results.length > 0) {
             resultsHtml += "<div class=\"search-results-header\">Search Results for \"".concat(query, "\"</div>");
             data.results.forEach(function (result) {
-              resultsHtml += "\n                            <div class=\"search-result-item\" data-preview=\"".concat(result.preview, "\">\n                                <div class=\"result-title\">").concat(result.friendly_name, "</div>\n                                <div class=\"result-preview\">").concat(result.preview, "</div>\n                            </div>");
+              resultsHtml += "\n                            <div class=\"search-result-item\" data-url=\"".concat(result.url, "\">\n                                <div class=\"result-title\">").concat(result.friendly_name, "</div>\n                                <div class=\"result-preview\">").concat(result.preview, "</div>\n                            </div>");
             });
           } else {
             resultsHtml += '<div class="no-results">No results found</div>';
           }
           _classPrivateFieldGet(_$searchModal, _this3).html(resultsHtml);
           _classPrivateFieldGet(_$searchModal, _this3).show();
-
-          // If it's a command, scroll to the result
-          if (scrollToResult) {
-            _this3.scrollToSearchResult(query);
-          }
         });
       } else {
         this.closeSearchModal();
@@ -25501,11 +25497,10 @@ var DpoTerminal = /*#__PURE__*/function () {
   }, {
     key: "scrollToSearchResult",
     value: function scrollToSearchResult(query) {
-      var previewText = _classPrivateFieldGet(_$searchModal, this).find('.result-preview:contains("' + query + '")').first().text();
-      if (previewText) {
-        var escapedPreviewText = previewText.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
-        var regex = new RegExp(escapedPreviewText, 'i');
-        var $paragraph = jquery__WEBPACK_IMPORTED_MODULE_0__('p').filter(function () {
+      if (query) {
+        var escapedQuery = query.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+        var regex = new RegExp(escapedQuery, 'i');
+        var $paragraph = jquery__WEBPACK_IMPORTED_MODULE_0__('p, h1, h2, h3, h4, h5, h6, li').filter(function () {
           return regex.test(jquery__WEBPACK_IMPORTED_MODULE_0__(this).text());
         }).first();
         if ($paragraph.length) {
@@ -25540,7 +25535,7 @@ var DpoTerminal = /*#__PURE__*/function () {
         $terminalPromptElement.html("".concat(terminalPath, " <span id=\"command-input\" contenteditable=\"true\" class=\"command-input\"></span>"));
         _classPrivateFieldSet(_$commandInput, this, jquery__WEBPACK_IMPORTED_MODULE_0__('#command-input'));
         if (_classPrivateFieldGet(_$commandInput, this).length) {
-          _classPrivateFieldGet(_$commandInput, this).on('keydown', function (e) {
+          _classPrivateFieldGet(_$commandInput, this).on('keyup', function (e) {
             if (e.key === "Enter") {
               e.preventDefault();
               _this4.handleCommand(_classPrivateFieldGet(_$commandInput, _this4).text().trim());

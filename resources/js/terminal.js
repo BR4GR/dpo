@@ -39,15 +39,10 @@ export default class DpoTerminal {
         $(document).ready(() => {
             this.#$commandInput = $('#command-input');
 
-            if (this.#$commandInput.length) {
-                this.#$commandInput.on('keydown', (e) => {
-                    if (e.key === "Enter") {
-                        e.preventDefault();
-                        this.handleCommand(this.#$commandInput.text().trim());
-                    } else {
-                        this.performLiveSearch(this.#$commandInput.text().trim());
-                    }
-                });
+            const searchQuery = sessionStorage.getItem('scrollQuery');
+            if (searchQuery) {
+                this.scrollToSearchResult(searchQuery);
+                sessionStorage.removeItem('scrollQuery'); // Clear it after use
             }
 
             $(window).on('popstate', () => {
@@ -56,6 +51,16 @@ export default class DpoTerminal {
 
             $('a').on('click', () => {
                 setTimeout(() => this.updateTerminalPath(), 100);
+            });
+
+            $(document).on('click', '.search-result-item', (e) => {
+                const url = $(e.currentTarget).data('url');
+                const previewText = $(e.currentTarget).find('.result-preview').text();
+
+                if (url) {
+                    sessionStorage.setItem('scrollQuery', previewText);
+                    window.location.href = url;
+                }
             });
 
             // Close modal if clicking outside it or pressing 'Esc'
@@ -101,9 +106,8 @@ export default class DpoTerminal {
     /**
      * Performs a live search based on the user's command.
      * @param {string} query - The search query.
-     * @param {boolean} scrollToResult - Whether to scroll to the result on the page.
      */
-    performLiveSearch(query, scrollToResult = false) {
+    performLiveSearch(query) {
         if (query.length > 0) {
             $.get(`/api/search?query=${encodeURIComponent(query)}`, (data) => {
                 let resultsHtml = '';
@@ -111,7 +115,7 @@ export default class DpoTerminal {
                     resultsHtml += `<div class="search-results-header">Search Results for "${query}"</div>`;
                     data.results.forEach(result => {
                         resultsHtml += `
-                            <div class="search-result-item" data-preview="${result.preview}">
+                            <div class="search-result-item" data-url="${result.url}">
                                 <div class="result-title">${result.friendly_name}</div>
                                 <div class="result-preview">${result.preview}</div>
                             </div>`;
@@ -121,11 +125,6 @@ export default class DpoTerminal {
                 }
                 this.#$searchModal.html(resultsHtml);
                 this.#$searchModal.show();
-
-                // If it's a command, scroll to the result
-                if (scrollToResult) {
-                    this.scrollToSearchResult(query);
-                }
             });
         } else {
             this.closeSearchModal();
@@ -137,12 +136,11 @@ export default class DpoTerminal {
      * @param {string} query - The search query to find in the document.
      */
     scrollToSearchResult(query) {
-        const previewText = this.#$searchModal.find('.result-preview:contains("' + query + '")').first().text();
+        if (query) {
+            const escapedQuery = query.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+            const regex = new RegExp(escapedQuery, 'i');
 
-        if (previewText) {
-            const escapedPreviewText = previewText.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
-            const regex = new RegExp(escapedPreviewText, 'i');
-            const $paragraph = $('p').filter(function () {
+            const $paragraph = $('p, h1, h2, h3, h4, h5, h6, li').filter(function () {
                 return regex.test($(this).text());
             }).first();
 
@@ -175,7 +173,7 @@ export default class DpoTerminal {
 
             this.#$commandInput = $('#command-input');
             if (this.#$commandInput.length) {
-                this.#$commandInput.on('keydown', (e) => {
+                this.#$commandInput.on('keyup', (e) => {
                     if (e.key === "Enter") {
                         e.preventDefault();
                         this.handleCommand(this.#$commandInput.text().trim());

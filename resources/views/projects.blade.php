@@ -14,7 +14,7 @@
 
 </pre>
 
-    <p>Explore my projects below, where I combine creativity with technology. Each project reflects my journey in web development, data science, and beyond. Dive in to see my work in action!</p>
+    <p>Explore my projects below, where I combine creativity with technology. Each project reflects my journey in software development, data science, and beyond. Dive in to see my work in action!</p>
 
     <div class="projects-container">
         <a href="{{ route('projects') }}" class="project-card">
