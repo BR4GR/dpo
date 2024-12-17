@@ -20,9 +20,6 @@
         <a href="{{ route('projects') }}" class="project-card">
             <iframe src="/raw/projects" class="project-raw"></iframe>
         </a>
-        <a href="https://github.com/BR4GR/wdb_Web-Daten-beschaffung" class="project-card">
-            <iframe src="https://github.com/BR4GR/wdb_Web-Daten-beschaffung" class="project-raw"></iframe>
-        </a>
         <a href="{{ route('skills.audit') }}" class="project-card">
             <div class="project-raw-wrapper">
                 <iframe src="/raw/skills-audit" class="project-raw"></iframe>
