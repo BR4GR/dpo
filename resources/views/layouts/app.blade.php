@@ -54,7 +54,7 @@
 ╚─╣ │
   │ ├─&gt; <a href="{{ route('projects') }}">projects</a>
   │ │
-  │ ├─&gt; <a href="{{ route('spektralsatz') }}">spektralsatz</a>
+  │ ├─&gt; <a href="{{ route('gutenberg') }}">karaoke</a>
   │ │
   ╠─┼─&gt; <a href="{{ route('spektralsatz') }}">spektralsatz</a>
   │ │
@@ -82,24 +82,6 @@
     <div class="content-container">
         @yield('content')
     </div>
-
-    <script>
-        window.addEventListener('scroll', function() {
-            const goToTopBtn = document.getElementById('go-to-top');
-            if (window.scrollY > 200) {
-                goToTopBtn.classList.add('show');
-            } else {
-                goToTopBtn.classList.remove('show');
-            }
-        });
-
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
 
     <script src="{{ asset('js/app.js') }}"></script>
     <script type="text/javascript" async

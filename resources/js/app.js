@@ -6,8 +6,8 @@
 import 'bootstrap';
 import './bootstrap.js';
 
-import DpoTerminal from "./terminal.js";
 import GutenbergKaraoke from "./gutenbergKaraoke.js";
+import DpoTerminal from "./terminal.js";
 // import MatrixLoading from "./matrix.js";
 // Import the main/root SCSS file to compile all styles.
 import '../css/app.scss';

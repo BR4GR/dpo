@@ -16,5 +16,5 @@ Route::get('/raw/{slug}', [BlogController::class, 'raw'])->name('raw');
 
 Route::get('/api/search', [SearchController::class, 'apiSearch'])->name('api.search');
 
-Route::get('/gutenberg', [GutenbergController::class, 'index'])->name('gutenberg.index');
+Route::get('/gutenberg', [GutenbergController::class, 'index'])->name('gutenberg');
 Route::get('/gutenberg/fetch', [GutenbergController::class, 'fetchBook'])->name('gutenberg.fetch');
