@@ -6,6 +6,7 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\GutenbergController;
 
 Route::get('/', [BlogController::class, 'welcome'])->name('home');
+Route::get('/a/{slug}', [BlogController::class, 'showArticle'])->name('articles.show');
 Route::get('/welcome', [BlogController::class, 'welcome'])->name('welcome');
 Route::get('/skills-audit', [BlogController::class, 'skillsAudit'])->name('skills.audit');
 Route::get('/spektralsatz', [BlogController::class, 'spektralsatz'])->name('spektralsatz');

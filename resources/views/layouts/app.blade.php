@@ -58,7 +58,7 @@
   │ │
   ╠─┼─&gt; <a href="{{ route('spektralsatz') }}">spektralsatz</a>
   │ │
-  │ └─&gt; <a href="https://boards.greenhouse.io/similarweb/jobs/6199035">Job</a>
+  │ └─&gt; <a href="{{ route('articles.show', ['slug' => 'std']) }}">Storytelling</a>
 ╔─╣
 │ │ ┌─&gt; <a href="https://www.linkedin.com/in/benjamin-w%C3%BCrmli-b08b2227a/"><i
             class="fa fa-linkedin-square"

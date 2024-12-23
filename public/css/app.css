@@ -84,6 +84,9 @@ button:hover {
   border-bottom: 2px solid #48b300;
   padding-bottom: 5px;
 }
+.article h3 {
+  color: #48b300;
+}
 .article p,
 .article ul {
   font-size: 18px;
@@ -111,6 +114,14 @@ button:hover {
 }
 .article .button:hover {
   background-color: #0d8102;
+}
+.article img {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  border-radius: 5px;
 }
 .article .MathJax {
   color: #00ff00;
@@ -188,6 +199,9 @@ button:hover {
   border-bottom: 2px solid #48b300;
   padding-bottom: 5px;
 }
+.article h3 {
+  color: #48b300;
+}
 .article p,
 .article ul {
   font-size: 18px;
@@ -215,6 +229,14 @@ button:hover {
 }
 .article .button:hover {
   background-color: #0d8102;
+}
+.article img {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  border-radius: 5px;
 }
 .article .MathJax {
   color: #00ff00;

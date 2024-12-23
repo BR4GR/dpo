@@ -34,6 +34,10 @@
         padding-bottom: 5px;
     }
 
+    h3 {
+        color: $main-color;
+    }
+
     p,
     ul {
         font-size: 18px;
@@ -66,6 +70,15 @@
 
     .button:hover {
         background-color: $secondary-color;
+    }
+
+    img {
+        width: 60%; // Default width for larger screens
+        max-width: 100%; // Prevent the image from exceeding the container's width
+        height: auto; // Maintain aspect ratio
+        border: 1px solid rgba(0, 255, 0, 0.3); // Optional: Add a border for style
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.2); // Optional: Add a glow effect
+        border-radius: 5px; // Optional: Slightly rounded corners
     }
 
     .MathJax {
