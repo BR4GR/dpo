@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
 export default class GutenbergKaraoke {
+    
     static applies() {
         return $('#displayArea').length > 0;
     }

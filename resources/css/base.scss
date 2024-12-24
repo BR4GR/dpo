@@ -42,6 +42,16 @@ a:hover {
     text-decoration: underline;
 }
 
+/* External links */
+a.external-link {
+    color: yellow;
+}
+
+/* Hover effect for external links */
+a.external-link:hover {
+    text-decoration: underline;
+}
+
 button {
     background-color: #008000;
     color: black;

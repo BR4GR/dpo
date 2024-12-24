@@ -14,7 +14,6 @@ export default class DpoTerminal {
         this.initializeTerminal();
         this.initializeSearchModal();
         this.initializeEventListeners();
-        console.log("Initialized DpoTerminal");
         this.focusOnCommandInput();
     }
 

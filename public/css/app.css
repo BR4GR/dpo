@@ -39,6 +39,16 @@ a:hover {
   text-decoration: underline;
 }
 
+/* External links */
+a.external-link {
+  color: yellow;
+}
+
+/* Hover effect for external links */
+a.external-link:hover {
+  text-decoration: underline;
+}
+
 button {
   background-color: #008000;
   color: black;
@@ -83,9 +93,11 @@ button:hover {
   color: #48b300;
   border-bottom: 2px solid #48b300;
   padding-bottom: 5px;
+  font-size: 3rem;
 }
 .article h3 {
   color: #48b300;
+  font-size: 1.3rem;
 }
 .article p,
 .article ul {
@@ -116,7 +128,7 @@ button:hover {
   background-color: #0d8102;
 }
 .article img {
-  width: 60%;
+  width: 90%;
   max-width: 100%;
   height: auto;
   border: 1px solid rgba(0, 255, 0, 0.3);
@@ -198,9 +210,11 @@ button:hover {
   color: #48b300;
   border-bottom: 2px solid #48b300;
   padding-bottom: 5px;
+  font-size: 3rem;
 }
 .article h3 {
   color: #48b300;
+  font-size: 1.3rem;
 }
 .article p,
 .article ul {
@@ -231,7 +245,7 @@ button:hover {
   background-color: #0d8102;
 }
 .article img {
-  width: 60%;
+  width: 90%;
   max-width: 100%;
   height: auto;
   border: 1px solid rgba(0, 255, 0, 0.3);

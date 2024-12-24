@@ -32,10 +32,12 @@
         color: $main-color;
         border-bottom: 2px solid $main-color;
         padding-bottom: 5px;
+        font-size: 3rem
     }
 
     h3 {
         color: $main-color;
+        font-size: 1.3rem
     }
 
     p,
@@ -73,7 +75,7 @@
     }
 
     img {
-        width: 60%; // Default width for larger screens
+        width: 90%; // Default width for larger screens
         max-width: 100%; // Prevent the image from exceeding the container's width
         height: auto; // Maintain aspect ratio
         border: 1px solid rgba(0, 255, 0, 0.3); // Optional: Add a border for style

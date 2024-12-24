@@ -23,7 +23,8 @@ class MarkdownParser
 
         $markdownContent = file_get_contents($filePath);
         $converter = new CommonMarkConverter([
-            'html_input' => 'escape', // Prevent HTML injection
+            'html_input' => 'allow', // Prevent HTML injection
+            'allow_unsafe_links' => false,
             'allow_unsafe_links' => false,
         ]);
 
