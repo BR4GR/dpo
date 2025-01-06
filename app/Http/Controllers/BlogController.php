@@ -16,6 +16,14 @@ class BlogController extends Controller
         return view('blog.article', ['content' => $content, 'slug' => $slug]);
     }
 
+    public function showPicoArticle($slug)
+    {
+        $filePath = resource_path("pico/{$slug}.md");
+        $content = MarkdownParser::parse($filePath);
+
+        return view('blog.article', ['content' => $content, 'slug' => $slug]);
+    }
+
     public function skillsAudit()
     {
         return view('skills-audit');

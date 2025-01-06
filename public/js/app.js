@@ -25564,8 +25564,101 @@ var STD = /*#__PURE__*/function () {
       });
       return consolidated;
     });
+    _defineProperty(this, "swissRates", [{
+      year: 1950,
+      value: 31.0
+    }, {
+      year: 1960,
+      value: 21.1
+    }, {
+      year: 1970,
+      value: 15.1
+    }, {
+      year: 1980,
+      value: 9.1
+    }, {
+      year: 1990,
+      value: 6.8
+    }, {
+      year: 1995,
+      value: 5.1
+    }, {
+      year: 1996,
+      value: 4.7
+    }, {
+      year: 1997,
+      value: 4.8
+    }, {
+      year: 1998,
+      value: 4.8
+    }, {
+      year: 1999,
+      value: 4.6
+    }, {
+      year: 2000,
+      value: 4.9
+    }, {
+      year: 2001,
+      value: 5.0
+    }, {
+      year: 2002,
+      value: 4.5
+    }, {
+      year: 2003,
+      value: 4.3
+    }, {
+      year: 2004,
+      value: 4.2
+    }, {
+      year: 2005,
+      value: 4.2
+    }, {
+      year: 2006,
+      value: 4.4
+    }, {
+      year: 2007,
+      value: 3.9
+    }, {
+      year: 2008,
+      value: 4.0
+    }, {
+      year: 2009,
+      value: 4.3
+    }, {
+      year: 2010,
+      value: 3.8
+    }, {
+      year: 2011,
+      value: 3.8
+    }, {
+      year: 2012,
+      value: 3.6
+    }, {
+      year: 2013,
+      value: 3.9
+    }, {
+      year: 2014,
+      value: 3.9
+    }, {
+      year: 2015,
+      value: 3.9
+    }, {
+      year: 2016,
+      value: 3.6
+    }, {
+      year: 2017,
+      value: 3.5
+    }, {
+      year: 2018,
+      value: 3.3
+    }, {
+      year: 2019,
+      value: 3.3
+    }]);
     this.renderLineChart();
     this.renderStackedBarChart();
+    this.renderInfantMortalityChart();
+    this.renderInfantMortalityLineChart();
   }
   return _createClass(STD, [{
     key: "getInverkehrsetzungen",
@@ -25873,6 +25966,139 @@ var STD = /*#__PURE__*/function () {
         legendRow.append("text").attr("x", 24).attr("y", 13).style("font-size", "15px").style("fill", "#fff").text(key);
       });
       var tooltip = d3__WEBPACK_IMPORTED_MODULE_0__.select("body").append("div").attr("class", "tooltip").style("position", "absolute").style("background-color", "rgba(0, 0, 0, 0.8)").style("color", "#fff").style("padding", "5px").style("border-radius", "4px").style("visibility", "hidden").style("font-size", "14px");
+    }
+  }, {
+    key: "renderInfantMortalityChart",
+    value: function renderInfantMortalityChart() {
+      var data = [{
+        region: 'Afrika',
+        value: 45
+      }, {
+        region: 'Weltweit',
+        value: 28
+      }, {
+        region: 'Asien',
+        value: 24
+      }, {
+        region: 'Ozeanien',
+        value: 17
+      }, {
+        region: 'Lateinamerika & Karibik',
+        value: 15
+      }, {
+        region: 'Nordamerika',
+        value: 6
+      }, {
+        region: 'Europa',
+        value: 4
+      }, {
+        region: 'Schweiz',
+        value: 3.3
+      }];
+
+      // Remove any existing chart to avoid duplication
+      d3__WEBPACK_IMPORTED_MODULE_0__.select("#säuglingssterblichkeit-nach-weltregion").select("svg").remove();
+      var width = 800;
+      var height = 500;
+      var margin = {
+        top: 50,
+        right: 30,
+        bottom: 100,
+        left: 60
+      };
+
+      // Create SVG container
+      var svg = d3__WEBPACK_IMPORTED_MODULE_0__.select("#säuglingssterblichkeit-nach-weltregion").append("svg").attr("viewBox", "0 0 ".concat(width, " ").concat(height)) // Makes it responsive
+      .attr("preserveAspectRatio", "xMidYMid meet");
+
+      // Scales
+      var x = d3__WEBPACK_IMPORTED_MODULE_0__.scaleBand().domain(data.map(function (d) {
+        return d.region;
+      })).range([margin.left, width - margin.right]).padding(0.4);
+      var y = d3__WEBPACK_IMPORTED_MODULE_0__.scaleLinear().domain([0, d3__WEBPACK_IMPORTED_MODULE_0__.max(data, function (d) {
+        return d.value;
+      })]).nice().range([height - margin.bottom, margin.top]);
+
+      // Color scale
+      var color = d3__WEBPACK_IMPORTED_MODULE_0__.scaleLinear().domain([0, d3__WEBPACK_IMPORTED_MODULE_0__.max(data, function (d) {
+        return d.value;
+      })]).range(["blue", "red"]); // Gradient from blue (low) to red (high)
+
+      // Axes
+      svg.append("g").attr("transform", "translate(0,".concat(height - margin.bottom, ")")).call(d3__WEBPACK_IMPORTED_MODULE_0__.axisBottom(x)).selectAll("text").attr("transform", "rotate(-25)").style("font-size", "14px").style("text-anchor", "end");
+
+      // Add a line for the global average
+      var globalAverage = 28;
+      svg.append("line").attr("x1", margin.left).attr("x2", width - margin.right).attr("y1", y(globalAverage)).attr("y2", y(globalAverage)).attr("stroke", "gray").attr("stroke-dasharray", "4").attr("stroke-width", 2);
+      svg.append("text").attr("x", width - margin.right).attr("y", y(globalAverage) - 5).attr("text-anchor", "end").text("Weltweiter Durchschnitt (28)").style("fill", "gray");
+
+      // Bars
+      svg.selectAll(".bar").data(data).enter().append("rect").attr("class", "bar").attr("x", function (d) {
+        return x(d.region);
+      }).attr("y", function (d) {
+        return y(d.value);
+      }).attr("width", x.bandwidth()).attr("height", function (d) {
+        return y(0) - y(d.value);
+      }).attr("fill", function (d) {
+        return color(d.value);
+      });
+
+      // Labels
+      svg.selectAll(".label").data(data).enter().append("text").attr("x", function (d) {
+        return x(d.region) + x.bandwidth() / 2;
+      }).attr("y", function (d) {
+        return y(d.value) - 5;
+      }).attr("text-anchor", "middle").text(function (d) {
+        return d.value;
+      }).style("fill", "white");
+
+      // Add title
+      svg.append("text").attr("x", width / 2).attr("y", margin.top / 2).attr("text-anchor", "middle").style("font-size", "18px").style("fill", "#fff").text("Säuglingssterblichkeit nach Weltregion (2019)");
+
+      // Add subtitle
+      svg.append("text").attr("x", width / 2).attr("y", margin.top + 10).attr("text-anchor", "middle").style("font-size", "14px").style("fill", "fff").text("Höchste Werte in Afrika, niedrigste in Europa");
+    }
+  }, {
+    key: "renderInfantMortalityLineChart",
+    value: function renderInfantMortalityLineChart() {
+      var data = this.swissRates;
+      console.log(data);
+      d3__WEBPACK_IMPORTED_MODULE_0__.select("#säuglingssterblichkeit-schweiz").select("svg").remove();
+      var svg = d3__WEBPACK_IMPORTED_MODULE_0__.select("#säuglingssterblichkeit-schweiz").append("svg").attr("viewBox", "0 0 800 600").attr("preserveAspectRatio", "xMidYMid meet");
+      var width = 800;
+      var height = 600;
+      var margin = {
+        top: 50,
+        right: 30,
+        bottom: 80,
+        left: 80
+      };
+      var x = d3__WEBPACK_IMPORTED_MODULE_0__.scaleLinear().domain(d3__WEBPACK_IMPORTED_MODULE_0__.extent(data, function (d) {
+        return d.year;
+      })).range([margin.left, width - margin.right]);
+      var y = d3__WEBPACK_IMPORTED_MODULE_0__.scaleLinear().domain([0, d3__WEBPACK_IMPORTED_MODULE_0__.max(data, function (d) {
+        return d.value;
+      })]).nice().range([height - margin.bottom, margin.top]);
+      var color = d3__WEBPACK_IMPORTED_MODULE_0__.scaleLinear().domain([d3__WEBPACK_IMPORTED_MODULE_0__.min(data, function (d) {
+        return d.value;
+      }), d3__WEBPACK_IMPORTED_MODULE_0__.max(data, function (d) {
+        return d.value;
+      })]).range(["blue", "red"]);
+      var line = d3__WEBPACK_IMPORTED_MODULE_0__.line().x(function (d) {
+        return x(d.year);
+      }).y(function (d) {
+        return y(d.value);
+      }).curve(d3__WEBPACK_IMPORTED_MODULE_0__.curveMonotoneX);
+      var gradientId = "line-gradient";
+      var gradient = svg.append("defs").append("linearGradient").attr("id", gradientId).attr("x1", "0%").attr("y1", "0%").attr("x2", "100%").attr("y2", "0%");
+      data.forEach(function (d, i) {
+        gradient.append("stop").attr("offset", "".concat(i / (data.length - 1) * 100, "%")).attr("stop-color", color(d.value));
+      });
+      svg.append("path").datum(data).attr("fill", "none").attr("stroke", "url(#".concat(gradientId, ")")).attr("stroke-width", 3).attr("d", line);
+      svg.append("g").attr("transform", "translate(0,".concat(height - margin.bottom, ")")).call(d3__WEBPACK_IMPORTED_MODULE_0__.axisBottom(x).tickFormat(d3__WEBPACK_IMPORTED_MODULE_0__.format("d")).tickSize(10)).selectAll("text").style("font-size", "14px").style("text-anchor", "middle");
+      svg.append("g").attr("transform", "translate(".concat(margin.left, ",0)")).call(d3__WEBPACK_IMPORTED_MODULE_0__.axisLeft(y).tickSize(10)).selectAll("text").style("font-size", "14px");
+      svg.append("text").attr("x", width / 2).attr("y", margin.top / 2).attr("text-anchor", "middle").style("font-size", "18px").style("fill", "#fff").text("Säuglingssterblichkeit in der Schweiz (1950–2019)");
+      svg.append("text").attr("transform", "rotate(-90)").attr("x", -height / 2).attr("y", 20).attr("text-anchor", "middle").style("font-size", "14px").style("fill", "#fff").text("Fälle pro 1,000 Lebendgeborene");
     }
   }], [{
     key: "applies",

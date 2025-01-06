@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\GutenbergController;
+use App\Http\Controllers\GameController;
 
 Route::get('/', [BlogController::class, 'welcome'])->name('home');
 Route::get('/a/{slug}', [BlogController::class, 'showArticle'])->name('articles.show');
@@ -19,3 +20,5 @@ Route::get('/api/search', [SearchController::class, 'apiSearch'])->name('api.sea
 
 Route::get('/gutenberg', [GutenbergController::class, 'index'])->name('gutenberg');
 Route::get('/gutenberg/fetch', [GutenbergController::class, 'fetchBook'])->name('gutenberg.fetch');
+
+Route::get('/snake', [GameController::class, 'snake'])->name('snake');

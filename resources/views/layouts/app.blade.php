@@ -21,6 +21,7 @@
     <link
         rel="stylesheet"
         href="{{ asset('css/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>

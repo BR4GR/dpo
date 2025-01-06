@@ -28,11 +28,15 @@
         text-align: center;
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+
     h2 {
         color: $main-color;
         border-bottom: 2px solid $main-color;
         padding-bottom: 5px;
-        font-size: 3rem
+        font-size: 2rem
     }
 
     h3 {
@@ -75,13 +79,55 @@
     }
 
     img {
-        width: 90%; // Default width for larger screens
-        max-width: 100%; // Prevent the image from exceeding the container's width
-        height: auto; // Maintain aspect ratio
-        border: 1px solid rgba(0, 255, 0, 0.3); // Optional: Add a border for style
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.2); // Optional: Add a glow effect
-        border-radius: 5px; // Optional: Slightly rounded corners
+        width: auto;
+        /* Allow the width to adjust automatically */
+        height: auto;
+        /* Allow the height to adjust automatically */
+        max-width: 80%;
+        /* Limit the width to 80% of the container */
+        max-height: 500px;
+        /* Limit the height to a maximum of 500px */
+        object-fit: contain;
+        /* Ensure the image fits within the bounds while preserving aspect ratio */
+        border: 1px solid rgba(0, 255, 0, 0.3);
+        /* Optional: Add a border for style */
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+        /* Optional: Add a glow effect */
+        border-radius: 5px;
+        /* Optional: Slightly rounded corners */
+        display: block;
+        margin: 0 auto;
+        /* Center the image horizontally */
     }
+
+    .image-container {
+        display: flex;
+        /* Use flexbox for side-by-side layout */
+        justify-content: center;
+        /* Center the images horizontally */
+        gap: 20px;
+        /* Add space between the images */
+        margin-top: 20px;
+        /* Add some top margin */
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+            border-radius: 5px;
+        }
+    }
+
+
+    svg {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
 
     .MathJax {
         color: #00ff00; // Neon green color for terminal effect

@@ -93,6 +93,27 @@ Daten:
 
 Quelle: Bundesamt für Statistik
 </pre>
+
+| Jahr | Benzin   | Diesel   | Hybrid  | Elektrisch | Wasserstoff | Gas | Andere |
+|:-----|:--------:|:--------:|:-------:|:----------:|:-----------:|:---:|-------:|
+| 2005 | 185120   | 74114    | 604     | 13         | 0           | 442 | 389    |
+| 2006 | 185807   | 80857    | 1569    | 9          | 0           | 1064| 441    |
+| 2007 | 185055   | 92333    | 3219    | 19         | 0           | 1653| 1692   |
+| 2008 | 189151   | 93366    | 3064    | 24         | 0           | 1136| 1201   |
+| 2009 | 182174   | 78755    | 3875    | 57         | 0           | 1063| 529    |
+| 2010 | 200576   | 90547    | 4213    | 201        | 0           | 721 | 302    |
+| 2011 | 211540   | 109324   | 5325    | 452        | 0           | 651 | 526    |
+| 2012 | 200576   | 124911   | 5530    | 924        | 1           | 519 | 406    |
+| 2013 | 185070   | 115656   | 5966    | 1392       | 0           | 791 | 87     |
+| 2014 | 180875   | 113304   | 5569    | 1948       | 0           | 1041| 22     |
+| 2015 | 185469   | 127899   | 5458    | 3882       | 15          | 1080| 13     |
+| 2016 | 178666   | 125595   | 7150    | 3525       | 10          | 944 | 4      |
+| 2017 | 183637   | 113848   | 8186    | 4929       | 2           | 769 | 1      |
+| 2018 | 188847   | 90360    | 10434   | 5411       | 27          | 805 | 5      |
+| 2019 | 192430   | 79618    | 18133   | 13197      | 27          | 1252| 2      |
+| 2020 | 119097   | 51987    | 27423   | 19765      | 48          | 571 | 0      |
+
+
 Gegebener Plot:
 
 ![Example of non optimal lineplot](/images/bad-line-plot.png "Example of non optimal lineplot")
@@ -181,8 +202,16 @@ Artikel von BBC:
 > [Tourist pound now down at close to just one dollar](https://www.bbc.com/news/business-46555314)
 
 ### Was macht diese Grafiken besonders gut?
-![Pounds VS USD since April 2018](/images/pounds-vs-usd.png "Pounds VS USD since April 2018")
-![Pound Performance since the EU Referendum](/images/pound-performance.png "Pound Performance since the EU Referendum")
+
+<div class="image-container">
+    <div class="image-item">
+        <img src="/images/pounds-vs-usd.png" alt="Pounds VS USD since April 2018" title="Pounds VS USD since April 2018">
+    </div>
+    <div class="image-item">
+        <img src="/images/pound-performance.png" alt="Pound Performance since the EU Referendum" title="Pound Performance since the EU Referendum">
+    </div>
+</div>
+
 
 1. **Kombination von Daten und Kontext**: Die Grafik verbindet den Verlauf des Wechselkurses (Pfund vs. US-Dollar) mit klar markierten Ereignissen (z. B. „Parliament orders 'meaningful vote' on Brexit“), die wesentliche Einflussfaktoren erklären.
 
@@ -228,11 +257,29 @@ Erstens durch den Bezug auf frühere Krisen („Franken­schock“), zweitens du
 ### Was passiert am Schluss der Datenstory?
 Sie gelangt zu der Erkenntnis, dass der Franken weder stark noch schwach ist, sondern sich im historischen Vergleich auf einem neutralen Wert bewegt. Dadurch wird die scheinbar dramatische Ausgangslage entdramatisiert.
 
-### Erstelle analog zum obigen Schema eine Tabelle. Beschreibe darin die Dramaturgie der Datenstory.
+### Erstelle analog zum  Schema eine Tabelle. Beschreibe darin die Dramaturgie der Datenstory.
 
-<pre>
-| **Einstieg**                                   | **Mittelteil**                              | **Schluss**                                    |
-|------------------------------------------------|---------------------------------------------|------------------------------------------------|
+<pre style="color: white;">
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
+|   Einstieg                                     |   Mittelteil                                |   Schluss                                      |
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| • eine allgemeine Einführung ins Thema         | • eine Komplikation im Anschluss an die     | • Widersprüche auflösen, Synthese formulieren  |
+|                                                |   Einführung                                |                                                |
+|                                                |                                             |                                                |
+| • eine spezifische (überraschende?)            | • eine Erklärung zu deiner Beobachtung      | • Was an den Beispielen generalisierbar ist    |
+|   Beobachtung                                  |                                             |                                                |
+|                                                |                                             |                                                |
+| • eine These, die du beweisen oder entkräften  | • ein Beispiel, das deine These untermauert | • Was deine These für weitere Implikationen    |
+|   möchtest                                     |                                             |   hat                                          |
+|                                                |                                             |                                                |
+| • ein Widerspruch, der erklärt werden muss     | • eine tiefere Erklärung zu deinem          | • Was das Publikum aus der Story               |
+|                                                |   Widerspruch                               |   mitnehmen muss                               |
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
+|   Einstieg                                     |   Mittelteil                                |   Schluss                                      |
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
 | • Der Artikel beginnt mit der Beobachtung,     | • Verschiedene Daten und Grafiken zeigen,   | • Der Artikel schließt mit der Erkenntnis,     |
 |   dass der Euro weniger wert ist als ein       |   dass der Franken nicht so „stark“ ist,    |   dass der Franken weder stark noch schwach    |
 |   Franken.                                     |   wie es zunächst erscheint.                |   ist, sondern historisch neutral bleibt.      |
@@ -248,5 +295,92 @@ Sie gelangt zu der Erkenntnis, dass der Franken weder stark noch schwach ist, so
 | • Der Widerspruch, warum der Franken stark     | • Der vermeintlich „starke“ Franken ist oft | • Der Artikel zeigt, dass einfache Schlagworte |
 |   wirkt, obwohl er im Kontext neutral ist,     |   temporären Schwankungen geschuldet.       |   wie „stark“ oder „schwach“ unzureichend sind.|
 |   wird aufgezeigt.                             |                                             |                                                |
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
 
 </pre>
+
+|   Einstieg                                             |   Mittelteil                                      |   Schluss                                       |
+|:-------------------------------------------------------|:--------------------------------------------------|:------------------------------------------------|
+| • eine allgemeine Einführung ins Thema                 | • eine Komplikation im Anschluss an die Einführung| • Widersprüche auflösen, Synthese formulieren   |
+| • eine spezifische (überraschende?) Beobachtung        | • eine Erklärung zu deiner Beobachtung            | • Was an den Beispielen generalisierbar ist     |
+| • eine These, die du beweisen oder entkräften möchtest | • ein Beispiel, das deine These untermauert       | • Was deine These für weitere Implikationen hat |
+| • ein Widerspruch, der erklärt werden muss             | • eine tiefere Erklärung zu deinem Widerspruch    | • Was das Publikum aus der Story mitnehmen muss |
+
+
+## Dramaturgien entwickeln
+
+Zum Datensatz des Bundesamt für Statistik:
+> [Indikatoren zur Gesundheit im Zeitvergleich](https://www.bfs.admin.ch/bfs/de/home/statistiken/gesundheit.assetdetail.15324706.html)
+
+### Gibt es Entwicklungen, die dich überraschen? Unterschiede, die erklärungsbedürftig sind? positive oder negative Trends?
+
+- **Steigende Lebenserwartung**  
+  - Die Lebenserwartung bei Geburt ist für Männer und Frauen kontinuierlich gestiegen. Überraschend ist, wie gleichmäßig dieser Trend verläuft und wie hoch die Werte in den letzten Jahren liegen.  
+
+- **Stark sinkende Kinder- und Säuglingssterblichkeit**  
+  - Die Säuglingssterblichkeit war 1950 noch bei 31 Fällen pro 1000 Lebendgeborenen und ist heute fast verschwunden (nur noch wenige Fälle). Das ist ein markanter Fortschritt.  
+
+- **Rückgang der Lungenkrebssterblichkeit**  
+  - Bis in die 1990er-Jahre hinein stiegen die Werte an, seither sinken sie. Ein Grund könnte die zurückgehende Raucherquote sein.  
+
+- **Kosten des Gesundheitswesens**  
+  - Die Gesundheitskosten steigen enorm und machen inzwischen einen deutlich zweistelligen Anteil am BIP aus. Das ist einerseits negativ (hohe Ausgaben), andererseits spiegeln die Ausgaben aber auch höhere Lebensqualität und medizinischen Fortschritt wider.  
+
+- **Auffällige Werte bei Mortalitäten**  
+  - Manche Mortalitätsraten (z. B. Leberzirrhose) sind länger erhöht, scheinen aber heute teils auf niedrigem Niveau zu verharren. Hier lohnt sich die Frage, warum es in bestimmten Zeiträumen Anstiege gab (z. B. Alkoholkonsum, Lebensstil).  
+
+- **Selbsttötung**  
+  - Die Zahlen sind in den 1970er- und 1980er-Jahren relativ hoch und gehen danach insgesamt zurück, bleiben aber weiterhin relevant.  
+
+- **Diskrepanz zwischen Pandemieerscheinung AIDS und aktuelle Daten**  
+  - Die AIDS-Neuerkrankungen stiegen stark an (Höchstwert in den 1980ern und 1990ern) und sind seither deutlich zurückgegangen.  
+
+- **Allgemeiner positiver Trend**  
+  - Mehr Ärzte pro Einwohner, höhere Lebenserwartung, niedrigere Kindersterblichkeit.  
+
+- **Allgemeiner negativer Trend**  
+  - Deutlich steigende Gesundheitskosten und steigender Anteil dieser Kosten am BIP (Belastung für das System).
+
+
+### Fokussiere nun auf genau eine deiner Beobachtungen und konzipiere dazu eine Datenstory (mit Vorteil, aber nicht absolut zwingend: in drei Teilen). Skizziere die Damaturgie dieser Story in einer Tabelle, analog zum obigen Beispiel.
+
+<pre style="color: white;">
+
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
+|   Einstieg                                     |   Mittelteil                                |   Schluss                                      |
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| • Die Säuglingssterblichkeit ist ein zentraler | • Obwohl die Säuglingssterblichkeit stark   | • Fortschritte im Gesundheitswesen und der     |
+|   Indikator für die Qualität eines             |   zurückgegangen ist, gibt es große         |   medizinischen Versorgung haben die Zahlen    |
+|   Gesundheitssystems.                          |   regionale Unterschiede und zeitliche      |   signifikant verbessert.                      |
+|                                                |   Schwankungen, die auf soziale und         |                                                |
+|                                                |   wirtschaftliche Faktoren hinweisen.       |                                                |
+|                                                |                                             |                                                |
+| • Überraschend ist der drastische Rückgang     | • Fortschritte in der medizinischen         | • Andere Länder können von diesen Maßnahmen    |
+|   seit den 1950er-Jahren von 31 Fällen pro     |   Versorgung, wie Impfungen und             |   profitieren, jedoch bleiben soziale          |
+|   1.000 Lebendgeborenen auf weniger als 4 pro  |   pränatale Betreuung, sind zentrale Gründe.|   Disparitäten ein Problem.                    |
+|   1.000 Lebendgeborenen heute.                 |                                             |                                                |
+|                                                |                                             |                                                |
+| • These: Fortschritte in der medizinischen     | • Beispiel: Einführung von Impfungen,       | • Der Rückgang ist generalisierbar für Länder, |
+|   Versorgung und Prävention sind der           |   verbesserte Hygiene und pränatale         |   die in medizinische Grundversorgung          |
+|   Haupttreiber dieses Rückgangs.               |   Betreuung seit den 1950er-Jahren.         |   investieren.                                 |
+|                                                |                                             |                                                |
+| • Widerspruch: Warum gibt es weiterhin         | • Erklärung: Sozioökonomische Faktoren und  | • Die Säuglingssterblichkeit bleibt ein        |
+|   Unterschiede zwischen Ländern oder           |   Ungleichheiten im Zugang zur              |   Gradmesser für Ungleichheit und              |
+|   Regionen trotz des globalen Fortschritts?    |   Gesundheitsversorgung spielen eine Rolle. |   Fortschritt weltweit.                        |
++------------------------------------------------+---------------------------------------------+------------------------------------------------+
+
+</pre>
+
+### The Revolution in Infant Survival
+
+In 1950, infant mortality in Switzerland was high—**31 deaths per 1,000 live births**. More babies didn’t survive their first year due to limited healthcare and fewer medical advances. Over the years, things changed. By **1995**, the rate had dropped to **5.1 per 1,000**, and by **2019**, it was just **3.3 per 1,000 live births**. This shows how improvements in healthcare, like better prenatal care and vaccines, saved lives. 
+
+<div id="säuglingssterblichkeit-schweiz"></div>
+
+Switzerland’s steady decline in infant deaths is a success story. Investment in hospitals, access to clean water, and good nutrition for mothers and babies all made a big difference.
+
+Switzerland’s story shows what’s possible when a country focuses on health. But it’s also a reminder that not every country has the same resources. While Switzerland’s rates are among the lowest in the world, countries like those in Africa still face high infant mortality. Switzerland’s progress is a lesson for the world: with the right investments, more lives can be saved everywhere.
+
+<div id="säuglingssterblichkeit-nach-weltregion"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>

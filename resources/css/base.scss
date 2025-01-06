@@ -67,3 +67,50 @@ button:hover {
     background-color: #00FF00;
     color: #000000;
 }
+
+.heading-permalink {
+    visibility: hidden;
+}
+
+h1:hover .heading-permalink,
+h2:hover .heading-permalink,
+h3:hover .heading-permalink,
+h4:hover .heading-permalink,
+h5:hover .heading-permalink,
+h6:hover .heading-permalink {
+    visibility: visible;
+}
+
+
+pre code {
+    width: 90%;
+    font-size: 1rem;
+    border: 1px solid #797979;
+    color: white;
+    border-radius: 5px;
+    font-family: monospace;
+    text-align: left;
+    display: block;
+    white-space: pre-wrap;
+    /* Allow wrapping inside the pre block */
+    word-wrap: break-word;
+    /* Prevent long words from overflowing */
+}
+
+
+.code-box .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.code-box .copy-btn:hover {
+    background-color: #0056b3;
+}

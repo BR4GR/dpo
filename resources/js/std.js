@@ -11,6 +11,8 @@ export default class STD {
     constructor() {
         this.renderLineChart();
         this.renderStackedBarChart();
+        this.renderInfantMortalityChart();
+        this.renderInfantMortalityLineChart();
     }
 
 
@@ -330,5 +332,237 @@ export default class STD {
             .style("visibility", "hidden")
             .style("font-size", "14px");
     }
+
+    renderInfantMortalityChart() {
+        const data = [
+            { region: 'Afrika', value: 45 },
+            { region: 'Weltweit', value: 28 },
+            { region: 'Asien', value: 24 },
+            { region: 'Ozeanien', value: 17 },
+            { region: 'Lateinamerika & Karibik', value: 15 },
+            { region: 'Nordamerika', value: 6 },
+            { region: 'Europa', value: 4 },
+            { region: 'Schweiz', value: 3.3 },
+        ];
+
+        // Remove any existing chart to avoid duplication
+        d3.select("#säuglingssterblichkeit-nach-weltregion").select("svg").remove();
+
+
+        const width = 800;
+        const height = 500;
+        const margin = { top: 50, right: 30, bottom: 100, left: 60 };
+
+        // Create SVG container
+        const svg = d3.select("#säuglingssterblichkeit-nach-weltregion")
+            .append("svg")
+            .attr("viewBox", `0 0 ${width} ${height}`) // Makes it responsive
+            .attr("preserveAspectRatio", "xMidYMid meet");
+
+        // Scales
+        const x = d3.scaleBand()
+            .domain(data.map(d => d.region))
+            .range([margin.left, width - margin.right])
+            .padding(0.4);
+
+        const y = d3.scaleLinear()
+            .domain([0, d3.max(data, d => d.value)])
+            .nice()
+            .range([height - margin.bottom, margin.top]);
+
+        // Color scale
+        const color = d3.scaleLinear()
+            .domain([0, d3.max(data, d => d.value)])
+            .range(["blue", "red"]); // Gradient from blue (low) to red (high)
+
+        // Axes
+        svg.append("g")
+            .attr("transform", `translate(0,${height - margin.bottom})`)
+            .call(d3.axisBottom(x))
+            .selectAll("text")
+            .attr("transform", "rotate(-25)")
+            .style("font-size", "14px")
+            .style("text-anchor", "end");
+
+
+        // Add a line for the global average
+        const globalAverage = 28;
+        svg.append("line")
+            .attr("x1", margin.left)
+            .attr("x2", width - margin.right)
+            .attr("y1", y(globalAverage))
+            .attr("y2", y(globalAverage))
+            .attr("stroke", "gray")
+            .attr("stroke-dasharray", "4")
+            .attr("stroke-width", 2);
+
+        svg.append("text")
+            .attr("x", width - margin.right)
+            .attr("y", y(globalAverage) - 5)
+            .attr("text-anchor", "end")
+            .text("Weltweiter Durchschnitt (28)")
+            .style("fill", "gray");
+
+        // Bars
+        svg.selectAll(".bar")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("class", "bar")
+            .attr("x", d => x(d.region))
+            .attr("y", d => y(d.value))
+            .attr("width", x.bandwidth())
+            .attr("height", d => y(0) - y(d.value))
+            .attr("fill", d => color(d.value));
+
+        // Labels
+        svg.selectAll(".label")
+            .data(data)
+            .enter()
+            .append("text")
+            .attr("x", d => x(d.region) + x.bandwidth() / 2)
+            .attr("y", d => y(d.value) - 5)
+            .attr("text-anchor", "middle")
+            .text(d => d.value)
+            .style("fill", "white");
+
+        // Add title
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", margin.top / 2)
+            .attr("text-anchor", "middle")
+            .style("font-size", "18px")
+            .style("fill", "#fff")
+            .text("Säuglingssterblichkeit nach Weltregion (2019)");
+
+        // Add subtitle
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", margin.top + 10)
+            .attr("text-anchor", "middle")
+            .style("font-size", "14px")
+            .style("fill", "fff")
+            .text("Höchste Werte in Afrika, niedrigste in Europa");
+    }
+
+    swissRates = [
+        { year: 1950, value: 31.0 },
+        { year: 1960, value: 21.1 },
+        { year: 1970, value: 15.1 },
+        { year: 1980, value: 9.1 },
+        { year: 1990, value: 6.8 },
+        { year: 1995, value: 5.1 },
+        { year: 1996, value: 4.7 },
+        { year: 1997, value: 4.8 },
+        { year: 1998, value: 4.8 },
+        { year: 1999, value: 4.6 },
+        { year: 2000, value: 4.9 },
+        { year: 2001, value: 5.0 },
+        { year: 2002, value: 4.5 },
+        { year: 2003, value: 4.3 },
+        { year: 2004, value: 4.2 },
+        { year: 2005, value: 4.2 },
+        { year: 2006, value: 4.4 },
+        { year: 2007, value: 3.9 },
+        { year: 2008, value: 4.0 },
+        { year: 2009, value: 4.3 },
+        { year: 2010, value: 3.8 },
+        { year: 2011, value: 3.8 },
+        { year: 2012, value: 3.6 },
+        { year: 2013, value: 3.9 },
+        { year: 2014, value: 3.9 },
+        { year: 2015, value: 3.9 },
+        { year: 2016, value: 3.6 },
+        { year: 2017, value: 3.5 },
+        { year: 2018, value: 3.3 },
+        { year: 2019, value: 3.3 }
+    ];
+
+    renderInfantMortalityLineChart() {
+        const data = this.swissRates;
+        console.log(data);
+
+        d3.select("#säuglingssterblichkeit-schweiz").select("svg").remove();
+
+        const svg = d3.select("#säuglingssterblichkeit-schweiz")
+            .append("svg")
+            .attr("viewBox", `0 0 800 600`)
+            .attr("preserveAspectRatio", "xMidYMid meet");
+
+        const width = 800;
+        const height = 600;
+        const margin = { top: 50, right: 30, bottom: 80, left: 80 };
+
+        const x = d3.scaleLinear()
+            .domain(d3.extent(data, d => d.year))
+            .range([margin.left, width - margin.right]);
+
+        const y = d3.scaleLinear()
+            .domain([0, d3.max(data, d => d.value)])
+            .nice()
+            .range([height - margin.bottom, margin.top]);
+
+        const color = d3.scaleLinear()
+            .domain([d3.min(data, d => d.value), d3.max(data, d => d.value)])
+            .range(["blue", "red"]);
+
+        const line = d3.line()
+            .x(d => x(d.year))
+            .y(d => y(d.value))
+            .curve(d3.curveMonotoneX);
+
+        const gradientId = "line-gradient";
+        const gradient = svg.append("defs")
+            .append("linearGradient")
+            .attr("id", gradientId)
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "100%")
+            .attr("y2", "0%");
+
+        data.forEach((d, i) => {
+            gradient.append("stop")
+                .attr("offset", `${(i / (data.length - 1)) * 100}%`)
+                .attr("stop-color", color(d.value));
+        });
+
+        svg.append("path")
+            .datum(data)
+            .attr("fill", "none")
+            .attr("stroke", `url(#${gradientId})`)
+            .attr("stroke-width", 3)
+            .attr("d", line);
+
+        svg.append("g")
+            .attr("transform", `translate(0,${height - margin.bottom})`)
+            .call(d3.axisBottom(x).tickFormat(d3.format("d")).tickSize(10))
+            .selectAll("text")
+            .style("font-size", "14px")
+            .style("text-anchor", "middle");
+
+        svg.append("g")
+            .attr("transform", `translate(${margin.left},0)`)
+            .call(d3.axisLeft(y).tickSize(10))
+            .selectAll("text")
+            .style("font-size", "14px");
+
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", margin.top / 2)
+            .attr("text-anchor", "middle")
+            .style("font-size", "18px")
+            .style("fill", "#fff")
+            .text("Säuglingssterblichkeit in der Schweiz (1950–2019)");
+
+        svg.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -height / 2)
+            .attr("y", 20)
+            .attr("text-anchor", "middle")
+            .style("font-size", "14px")
+            .style("fill", "#fff")
+            .text("Fälle pro 1,000 Lebendgeborene");
+    }
+
 
 }
