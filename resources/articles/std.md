@@ -71,28 +71,6 @@ Ein Punktdiagramm (Scatter Plot) wird verwendet, wenn du Zusammenhänge oder Kor
 ### Versuche mit den verfügbaren Formatierungsoptionen die Lesbarkeit des Plots maximal zu verbessern.
 
 Daten:
-<pre>
-| Jahr | Benzin   | Diesel   | Hybrid  | Elektrisch | Wasserstoff | Gas | Andere |
-|------|----------|----------|---------|------------|-------------|-----|--------|
-| 2005 | 185120   | 74114    | 604     | 13         | 0           | 442 | 389    |
-| 2006 | 185807   | 80857    | 1569    | 9          | 0           | 1064| 441    |
-| 2007 | 185055   | 92333    | 3219    | 19         | 0           | 1653| 1692   |
-| 2008 | 189151   | 93366    | 3064    | 24         | 0           | 1136| 1201   |
-| 2009 | 182174   | 78755    | 3875    | 57         | 0           | 1063| 529    |
-| 2010 | 200576   | 90547    | 4213    | 201        | 0           | 721 | 302    |
-| 2011 | 211540   | 109324   | 5325    | 452        | 0           | 651 | 526    |
-| 2012 | 200576   | 124911   | 5530    | 924        | 1           | 519 | 406    |
-| 2013 | 185070   | 115656   | 5966    | 1392       | 0           | 791 | 87     |
-| 2014 | 180875   | 113304   | 5569    | 1948       | 0           | 1041| 22     |
-| 2015 | 185469   | 127899   | 5458    | 3882       | 15          | 1080| 13     |
-| 2016 | 178666   | 125595   | 7150    | 3525       | 10          | 944 | 4      |
-| 2017 | 183637   | 113848   | 8186    | 4929       | 2           | 769 | 1      |
-| 2018 | 188847   | 90360    | 10434   | 5411       | 27          | 805 | 5      |
-| 2019 | 192430   | 79618    | 18133   | 13197      | 27          | 1252| 2      |
-| 2020 | 119097   | 51987    | 27423   | 19765      | 48          | 571 | 0      |
-
-Quelle: Bundesamt für Statistik
-</pre>
 
 | Jahr | Benzin   | Diesel   | Hybrid  | Elektrisch | Wasserstoff | Gas | Andere |
 |:-----|:--------:|:--------:|:-------:|:----------:|:-----------:|:---:|-------:|
@@ -113,6 +91,7 @@ Quelle: Bundesamt für Statistik
 | 2019 | 192430   | 79618    | 18133   | 13197      | 27          | 1252| 2      |
 | 2020 | 119097   | 51987    | 27423   | 19765      | 48          | 571 | 0      |
 
+Quelle: Bundesamt für Statistik
 
 Gegebener Plot:
 
@@ -257,47 +236,8 @@ Erstens durch den Bezug auf frühere Krisen („Franken­schock“), zweitens du
 ### Was passiert am Schluss der Datenstory?
 Sie gelangt zu der Erkenntnis, dass der Franken weder stark noch schwach ist, sondern sich im historischen Vergleich auf einem neutralen Wert bewegt. Dadurch wird die scheinbar dramatische Ausgangslage entdramatisiert.
 
-### Erstelle analog zum  Schema eine Tabelle. Beschreibe darin die Dramaturgie der Datenstory.
-
-<pre style="color: white;">
-+------------------------------------------------+---------------------------------------------+------------------------------------------------+
-|   Einstieg                                     |   Mittelteil                                |   Schluss                                      |
-+------------------------------------------------+---------------------------------------------+------------------------------------------------+
-| • eine allgemeine Einführung ins Thema         | • eine Komplikation im Anschluss an die     | • Widersprüche auflösen, Synthese formulieren  |
-|                                                |   Einführung                                |                                                |
-|                                                |                                             |                                                |
-| • eine spezifische (überraschende?)            | • eine Erklärung zu deiner Beobachtung      | • Was an den Beispielen generalisierbar ist    |
-|   Beobachtung                                  |                                             |                                                |
-|                                                |                                             |                                                |
-| • eine These, die du beweisen oder entkräften  | • ein Beispiel, das deine These untermauert | • Was deine These für weitere Implikationen    |
-|   möchtest                                     |                                             |   hat                                          |
-|                                                |                                             |                                                |
-| • ein Widerspruch, der erklärt werden muss     | • eine tiefere Erklärung zu deinem          | • Was das Publikum aus der Story               |
-|                                                |   Widerspruch                               |   mitnehmen muss                               |
-+------------------------------------------------+---------------------------------------------+------------------------------------------------+
-
-
-+------------------------------------------------+---------------------------------------------+------------------------------------------------+
-|   Einstieg                                     |   Mittelteil                                |   Schluss                                      |
-+------------------------------------------------+---------------------------------------------+------------------------------------------------+
-| • Der Artikel beginnt mit der Beobachtung,     | • Verschiedene Daten und Grafiken zeigen,   | • Der Artikel schließt mit der Erkenntnis,     |
-|   dass der Euro weniger wert ist als ein       |   dass der Franken nicht so „stark“ ist,    |   dass der Franken weder stark noch schwach    |
-|   Franken.                                     |   wie es zunächst erscheint.                |   ist, sondern historisch neutral bleibt.      |
-|                                                |                                             |                                                |
-| • Der Wechselkurs von Euro und Franken wirkt   | • Wechselkursschwankungen sind weniger auf  | • Wechselkurse sind komplex und werden durch   |
-|   dramatisch und außergewöhnlich niedrig.      |   tatsächliche Stärke zurückzuführen als    |   zahlreiche politische und wirtschaftliche    |
-|                                                |   auf wirtschaftliche und                   |   Faktoren beeinflusst.                        |
-|                                                |   politische Faktoren.                      |                                                |
-|                                                |                                             |                                                |
-| • Die Frage „Ist der Franken wirklich stark?“  | • Daten aus früheren Krisen, wie dem        | • Wechselkursentwicklungen erfordern           |
-|   wird aufgeworfen.                            |   „Frankenschock“, stützen die Analyse.     |   differenzierte Betrachtungen.                |
-|                                                |                                             |                                                |
-| • Der Widerspruch, warum der Franken stark     | • Der vermeintlich „starke“ Franken ist oft | • Der Artikel zeigt, dass einfache Schlagworte |
-|   wirkt, obwohl er im Kontext neutral ist,     |   temporären Schwankungen geschuldet.       |   wie „stark“ oder „schwach“ unzureichend sind.|
-|   wird aufgezeigt.                             |                                             |                                                |
-+------------------------------------------------+---------------------------------------------+------------------------------------------------+
-
-</pre>
+### Erstelle analog zum gegebenen Schema eine Tabelle. Beschreibe darin die Dramaturgie der Datenstory.
+Schema:
 
 |   Einstieg                                             |   Mittelteil                                      |   Schluss                                       |
 |:-------------------------------------------------------|:--------------------------------------------------|:------------------------------------------------|
@@ -305,6 +245,15 @@ Sie gelangt zu der Erkenntnis, dass der Franken weder stark noch schwach ist, so
 | • eine spezifische (überraschende?) Beobachtung        | • eine Erklärung zu deiner Beobachtung            | • Was an den Beispielen generalisierbar ist     |
 | • eine These, die du beweisen oder entkräften möchtest | • ein Beispiel, das deine These untermauert       | • Was deine These für weitere Implikationen hat |
 | • ein Widerspruch, der erklärt werden muss             | • eine tiefere Erklärung zu deinem Widerspruch    | • Was das Publikum aus der Story mitnehmen muss |
+
+Beschreibung der Dramaturgie der Datenstory:
+
+|   Einstieg                                                                                           |   Mittelteil                                                                                                                    |   Schluss                                                                                                                    |
+|:-----------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| • Der Artikel beginnt mit der Beobachtung, dass der Euro weniger wert ist als ein Franken.           | • Verschiedene Daten und Grafiken zeigen, dass der Franken nicht so „stark“ ist, wie es zunächst erscheint.                     | • Der Artikel schließt mit der Erkenntnis, ist, dass der Franken weder stark noch schwach sondern historisch neutral bleibt. |
+| • Der Wechselkurs von Euro und Franken wirkt dramatisch und außergewöhnlich niedrig.                 | • Wechselkursschwankungen sind weniger auf tatsächliche Stärke zurückzuführen als auf wirtschaftliche und politische Faktoren.  | • Wechselkurse sind komplex und werden durch zahlreiche politische und wirtschaftliche Faktoren beeinflusst.                 |
+| • Die Frage „Ist der Franken wirklich stark?“ wird aufgeworfen.                                      | • Daten aus früheren Krisen, wie dem „Frankenschock“, stützen die Analyse.                                                      | • Wechselkursentwicklungen erfordern differenzierte Betrachtungen.                                                           |
+| • Der Widerspruch, warum der Franken stark wirkt, obwohl er im Kontext neutral ist, wird aufgezeigt. | • Der vermeintlich „starke“ Franken ist oft temporären Schwankungen geschuldet.                                                 | • Der Artikel zeigt, dass einfache Schlagworte wie „stark“ oder „schwach“ unzureichend sind.                                 |
 
 
 ## Dramaturgien entwickeln

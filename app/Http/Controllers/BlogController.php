@@ -8,13 +8,23 @@ use App\Helpers\MarkdownParser;
 
 class BlogController extends Controller
 {
-    public function showArticle($slug)
+    public function showArticle($slug, $isRaw = false)
     {
         $filePath = resource_path("articles/{$slug}.md");
         $content = MarkdownParser::parse($filePath);
 
+        if ($isRaw) {
+            return view('blog.article', ['content' => $content, 'slug' => $slug])->with('layout', 'raw');
+        }
+
         return view('blog.article', ['content' => $content, 'slug' => $slug]);
     }
+    // {
+    //     $filePath = resource_path("articles/{$slug}.md");
+    //     $content = MarkdownParser::parse($filePath);
+
+    //     return view('blog.article', ['content' => $content, 'slug' => $slug]);
+    // }
 
     public function showPicoArticle($slug)
     {
@@ -51,6 +61,11 @@ class BlogController extends Controller
 
     public function raw($slug)
     {
+        if (in_array($slug, ['std', 'std-preview', 'wdb'])) {
+            // use public function showArticle($slug) for these
+            return $this->showArticle($slug, isRaw: true);
+        }
+
         return view($slug)->with('layout', 'raw');
     }
 }

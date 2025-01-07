@@ -17,8 +17,13 @@
     <p>Explore my projects below, where I combine creativity with technology. Each project reflects my journey in software development, data science, and beyond. Dive in to see my work in action!</p>
 
     <div class="projects-container">
-        <a href="{{ route('projects') }}" class="project-card">
-            <iframe src="/raw/projects" class="project-raw"></iframe>
+        <a href="{{ route('articles.show', ['slug' => 'std']) }}" class="project-card">
+            <div class="project-raw-wrapper">
+                <iframe src="/raw/std-preview" class="project-raw"></iframe>
+            </div>
+        </a>
+        <a href="{{ route('articles.show', ['slug' => 'wdb']) }}" class="project-card">
+            <iframe src="/raw/wdb" class="project-raw"></iframe>
         </a>
         <a href="{{ route('skills.audit') }}" class="project-card">
             <div class="project-raw-wrapper">

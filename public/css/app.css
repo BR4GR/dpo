@@ -129,6 +129,23 @@ pre code {
     font-size: 0.4rem;
   }
 }
+.article table {
+  border-collapse: collapse;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 10px;
+}
+.article td,
+.article th {
+  border: 1px dashed #808380;
+  padding: 4px 8px;
+}
+.article th {
+  background-color: #1c4901;
+  font-weight: bold;
+}
 .article pre,
 .article h1 {
   color: #48b300;
@@ -286,6 +303,23 @@ pre code {
   .article pre {
     font-size: 0.4rem;
   }
+}
+.article table {
+  border-collapse: collapse;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 10px;
+}
+.article td,
+.article th {
+  border: 1px dashed #808380;
+  padding: 4px 8px;
+}
+.article th {
+  background-color: #1c4901;
+  font-weight: bold;
 }
 .article pre,
 .article h1 {

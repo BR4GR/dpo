@@ -1,0 +1,19 @@
+echo "alias php='/opt/php82/bin/php'" >> ~/.bash_profile
+
+echo "export PATH=/opt/php82/bin:\$PATH" >> ~/.bash_profile
+
+
+
+
+alias php='/opt/php82/bin/php' 
+echo "alias php='/opt/php82/bin/php'" >> ~/.bash_profile
+
+export PATH=/opt/php82/bin:$PATH
+echo "export PATH=/opt/php82/bin:\$PATH" >> ~/.bash_profile 
+
+V$n$wv4#wX9c*8Mg
+
+
+vyXt^6M5qB$FXJMQfPC2*B#F$ugV0Dke
+
+vyXt^6M5qB$FXJMQfPC2*B#F$ugV0Dke
