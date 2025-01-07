@@ -19,7 +19,7 @@
     <div class="projects-container">
         <a href="{{ route('articles.show', ['slug' => 'std']) }}" class="project-card">
             <div class="project-raw-wrapper">
-                <iframe src="/raw/std-prewiew" class="project-raw"></iframe>
+                <iframe src="/raw/std-preview" class="project-raw"></iframe>
             </div>
         </a>
         <a href="{{ route('articles.show', ['slug' => 'wdb']) }}" class="project-card">
