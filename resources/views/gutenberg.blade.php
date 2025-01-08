@@ -3,7 +3,9 @@
 @section('content')
 <div id="gutenberg-page" class="container article">
     <h1>Gutenberg Random Book - Karaoke Style</h1>
-    <p>This page fetches a random public domain text from Project Gutenberg and displays it word by word.</p>
+    <p>This page fetches a random public domain text from Project Gutenberg and displays it word by word. Inspired by Kindle Word Runner which i like.</p>
+    <p> it is still a proof of concept and may not work perfectly with all books.</p>
+
 
     <div id="bookInfo">Loading a random Gutenberg book...</div>
     <div id="controlPanel" style="margin:10px 0;">
