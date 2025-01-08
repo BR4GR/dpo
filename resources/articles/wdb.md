@@ -47,9 +47,9 @@ Web scraping dynamic websites like Migros can be challenging due to frequent cha
 ## Why I Built This
 This project reflects my interest in data engineering and automation. By developing a tool to extract and store data from a major retailer like Migros, I aimed to create a resource that could be used for various analytical purposes, while also honing my skills in web scraping, database management, and containerization.
 
-## Future Enhancements
-- **Scheduled Scraping**  
-  Implementing a scheduling mechanism to perform regular data extractions, keeping the dataset current.
+## Future possible Enhancements
+- **Dashboard**  
+  Where one could filder for different categories or products, and observe its changes over time. 
 
 - **Data Cleaning and Normalization**  
   Adding processes to clean and normalize data for improved quality and consistency.
@@ -57,11 +57,4 @@ This project reflects my interest in data engineering and automation. By develop
 - **Scalability Improvements**  
   Optimizing the scraper to handle larger volumes of data and additional websites.
 
-## Conclusion
-The Migros Scraper Project demonstrates my ability to develop complex data extraction tools and manage data storage across different database systems. It showcases my proficiency in Python, web scraping techniques, and the use of Docker for environment management. This project is a solid foundation for further developments in automated data collection and analysis.
-
 Feel free to explore the [GitHub repository](https://github.com/BR4GR/wdb_Web-Daten-beschaffung) for detailed documentation and source code.
-
----
-
-Let me know if there are any specific aspects you'd like to highlight or additional details you'd like to include! 
