@@ -33,5 +33,9 @@
     <p>
         At Similarweb, I aim to contribute my technical experiance in programing and backend development to help improve the company’s data colection tools. I am enthusiastic about joining a company that values curiosity, innovation, and practical problem-solving, and I look forward to contributing to impactful projects. I also believe that my background in backend development and passion for building reliable, scalable data pipelines can help Similarweb maintain and improve its top-tier digital intelligence solutions. Ultimately, I hope to make a meaningful impact by working closely with the R&D team, using my skills to overcome challenges and continuously improve Similarweb’s offerings.
     </p>
+
+    <p>
+        <a href="https://dpo.been-jammin.ch/data/CV-Benjamin-Wuermli.pdf">My CV</a>
+    </p>
 </div>
 @endsection

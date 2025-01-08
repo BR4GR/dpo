@@ -1,0 +1,446 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89" style="direction:ltr" class="document-preview">
+<rect fill="white" height="100%" width="100%"></rect>
+<path fill="#EEF1F2" d="M 0,0 L 200,0 C 200,0,200,0,200,0 L 200,841.89 C 200,841.89,200,841.89,200,841.89 L 0,841.89 C 0,841.89,0,841.89,0,841.89 L 0,0 C 0,0,0,0,0,0 Z"></path>
+<path fill="#395a86" d="M 0,0 L 200,0 C 200,0,200,0,200,0 L 200,75.75 C 200,75.75,200,75.75,200,75.75 L 0,75.75 C 0,75.75,0,75.75,0,75.75 L 0,0 C 0,0,0,0,0,0 Z"></path>
+<text font-weight="bold" fill="white" font-size="15px" font-family="LiberationSans" y="45.1875" x="38.743896484375">Benjamin&nbsp;</text>
+<text font-weight="bold" fill="white" font-size="15px" font-family="LiberationSans" y="45.1875" x="110.426025390625">Würmli</text>
+<text fill="white" font-size="11px" font-family="LiberationSans" y="66.7625" x="51.69775390625">Software&nbsp;</text>
+<text fill="white" font-size="11px" font-family="LiberationSans" y="66.7625" x="98.1630859375">Developer</text>
+<path fill="#395a86" d="M 0,73.75 L 200,73.75 C 200,73.75,200,73.75,200,73.75 L 200,88.75 C 200,88.75,200,88.75,200,88.75 C 140,116.75,60,116.75,0,88.75 C 0,88.75,0,88.75,0,88.75 L 0,73.75 C 0,73.75,0,73.75,0,73.75 Z"></path>
+<svg y="125.75" x="15" id="personalDetails"></svg>
+<text fill="#395a86" font-size="18px" font-family="LiberationSans" y="143.975" x="15">Personal&nbsp;</text>
+<text fill="#395a86" font-size="18px" font-family="LiberationSans" y="143.975" x="91.04296875">details</text>
+<path fill="#c8c8c8" d="M 15,154.5 L 185,154.5 C 185,154.5,185,154.5,185,154.5 L 185,155 C 185,155,185,155,185,155 L 15,155 C 15,155,15,155,15,155 L 15,154.5 C 15,154.5,15,154.5,15,154.5 Z"></path>
+<svg y="165" x="15"></svg>
+<image image-rendering="optimizeSpeed" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzOTVhODYiIHZpZXdCb3g9IjAgMCA0NDggNTEyIiB3aWR0aD0iNDQ4IiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTIyNCAyNTZjNzAuNyAwIDEyOC01Ny4zIDEyOC0xMjhTMjk0LjcgMCAyMjQgMCA5NiA1Ny4zIDk2IDEyOHM1Ny4zIDEyOCAxMjggMTI4em04OS42IDMyaC0xNi43Yy0yMi4yIDEwLjItNDYuOSAxNi03Mi45IDE2cy01MC42LTUuOC03Mi45LTE2aC0xNi43QzYwLjIgMjg4IDAgMzQ4LjIgMCA0MjIuNFY0NjRjMCAyNi41IDIxLjUgNDggNDggNDhoMzUyYzI2LjUgMCA0OC0yMS41IDQ4LTQ4di00MS42YzAtNzQuMi02MC4yLTEzNC40LTEzNC40LTEzNC40eiI+PC9wYXRoPjwvc3ZnPg==" height="15" width="13.125" y="165" x="15.9375"></image>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="175.125" x="39">Benjamin&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="175.125" x="83.4677734375">Würmli</text>
+<svg y="195" x="15" id="emailaddress"></svg>
+<image image-rendering="optimizeSpeed" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzOTVhODYiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTUwMi4zIDE5MC44YzMuOS0zLjEgOS43LS4yIDkuNyA0LjdWNDAwYzAgMjYuNS0yMS41IDQ4LTQ4IDQ4SDQ4Yy0yNi41IDAtNDgtMjEuNS00OC00OFYxOTUuNmMwLTUgNS43LTcuOCA5LjctNC43IDIyLjQgMTcuNCA1Mi4xIDM5LjUgMTU0LjEgMTEzLjYgMjEuMSAxNS40IDU2LjcgNDcuOCA5Mi4yIDQ3LjYgMzUuNy4zIDcyLTMyLjggOTIuMy00Ny42IDEwMi03NC4xIDEzMS42LTk2LjMgMTU0LTExMy43ek0yNTYgMzIwYzIzLjIuNCA1Ni42LTI5LjIgNzMuNC00MS40IDEzMi43LTk2LjMgMTQyLjgtMTA0LjcgMTczLjQtMTI4LjcgNS44LTQuNSA5LjItMTEuNSA5LjItMTguOXYtMTljMC0yNi41LTIxLjUtNDgtNDgtNDhINDhDMjEuNSA2NCAwIDg1LjUgMCAxMTJ2MTljMCA3LjQgMy40IDE0LjMgOS4yIDE4LjkgMzAuNiAyMy45IDQwLjcgMzIuNCAxNzMuNCAxMjguNyAxNi44IDEyLjIgNTAuMiA0MS44IDczLjQgNDEuNHoiPjwvcGF0aD48L3N2Zz4=" height="15" width="15" y="195" x="15"></image>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="205.125" x="39">benjamin</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="205.125" x="79.5810546875">@</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="205.125" x="89.732421875">spaceforce</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="205.125" x="138.6484375">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="205.125" x="141.4267578125">li</text>
+<svg y="225" x="15" id="phonenumber"></svg>
+<image image-rendering="optimizeSpeed" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzOTVhODYiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTQ5My40IDI0LjZsLTEwNC0yNGMtMTEuMy0yLjYtMjIuOSAzLjMtMjcuNSAxMy45bC00OCAxMTJjLTQuMiA5LjgtMS40IDIxLjMgNi45IDI4bDYwLjYgNDkuNmMtMzYgNzYuNy05OC45IDE0MC41LTE3Ny4yIDE3Ny4ybC00OS42LTYwLjZjLTYuOC04LjMtMTguMi0xMS4xLTI4LTYuOWwtMTEyIDQ4QzMuOSAzNjYuNS0yIDM3OC4xLjYgMzg5LjRsMjQgMTA0QzI3LjEgNTA0LjIgMzYuNyA1MTIgNDggNTEyYzI1Ni4xIDAgNDY0LTIwNy41IDQ2NC00NjQgMC0xMS4yLTcuNy0yMC45LTE4LjYtMjMuNHoiPjwvcGF0aD48L3N2Zz4=" height="15" width="15" y="225" x="15"></image>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="235.125" x="39">+</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="235.125" x="44.83984375">4177&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="235.125" x="69.8642578125">916&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="235.125" x="89.3271484375">82&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="235.125" x="103.228515625">11</text>
+<svg y="255" x="15" id="address"></svg>
+<image image-rendering="optimizeSpeed" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzOTVhODYiIHZpZXdCb3g9IjAgMCA1NzYgNTEyIiB3aWR0aD0iNTc2IiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTI4MC4zNyAxNDguMjZMOTYgMzAwLjExVjQ2NGExNiAxNiAwIDAgMCAxNiAxNmwxMTIuMDYtLjI5YTE2IDE2IDAgMCAwIDE1LjkyLTE2VjM2OGExNiAxNiAwIDAgMSAxNi0xNmg2NGExNiAxNiAwIDAgMSAxNiAxNnY5NS42NGExNiAxNiAwIDAgMCAxNiAxNi4wNUw0NjQgNDgwYTE2IDE2IDAgMCAwIDE2LTE2VjMwMEwyOTUuNjcgMTQ4LjI2YTEyLjE5IDEyLjE5IDAgMCAwLTE1LjMgMHpNNTcxLjYgMjUxLjQ3TDQ4OCAxODIuNTZWNDQuMDVhMTIgMTIgMCAwIDAtMTItMTJoLTU2YTEyIDEyIDAgMCAwLTEyIDEydjcyLjYxTDMxOC40NyA0M2E0OCA0OCAwIDAgMC02MSAwTDQuMzQgMjUxLjQ3YTEyIDEyIDAgMCAwLTEuNiAxNi45bDI1LjUgMzFBMTIgMTIgMCAwIDAgNDUuMTUgMzAxbDIzNS4yMi0xOTMuNzRhMTIuMTkgMTIuMTkgMCAwIDEgMTUuMyAwTDUzMC45IDMwMWExMiAxMiAwIDAgMCAxNi45LTEuNmwyNS41LTMxYTEyIDEyIDAgMCAwLTEuNy0xNi45M3oiPjwvcGF0aD48L3N2Zz4=" height="15" width="16.875" y="255" x="14.0625"></image>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="265.125" x="39">Rosenweg&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="265.125" x="89.029296875">9</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="278.875" x="39">5210&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="278.875" x="64.0244140625">Windisch</text>
+<svg y="297.5" x="15" id="nationality"></svg>
+<image image-rendering="optimizeSpeed" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzOTVhODYiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTM0OS41NjUgOTguNzgzQzI5NS45NzggOTguNzgzIDI1MS43MjEgNjQgMTg0LjM0OCA2NGMtMjQuOTU1IDAtNDcuMzA5IDQuMzg0LTY4LjA0NSAxMi4wMTNhNTUuOTQ3IDU1Ljk0NyAwIDAgMCAzLjU4Ni0yMy41NjJDMTE4LjExNyAyNC4wMTUgOTQuODA2IDEuMjA2IDY2LjMzOC4wNDggMzQuMzQ1LTEuMjU0IDggMjQuMjk2IDggNTZjMCAxOS4wMjYgOS40OTcgMzUuODI1IDI0IDQ1Ljk0NVY0ODhjMCAxMy4yNTUgMTAuNzQ1IDI0IDI0IDI0aDE2YzEzLjI1NSAwIDI0LTEwLjc0NSAyNC0yNHYtOTQuNGMyOC4zMTEtMTIuMDY0IDYzLjU4Mi0yMi4xMjIgMTE0LjQzNS0yMi4xMjIgNTMuNTg4IDAgOTcuODQ0IDM0Ljc4MyAxNjUuMjE3IDM0Ljc4MyA0OC4xNjkgMCA4Ni42NjctMTYuMjk0IDEyMi41MDUtNDAuODU4QzUwNi44NCAzNTkuNDUyIDUxMiAzNDkuNTcxIDUxMiAzMzkuMDQ1di0yNDMuMWMwLTIzLjM5My0yNC4yNjktMzguODctNDUuNDg1LTI5LjAxNi0zNC4zMzggMTUuOTQ4LTc2LjQ1NCAzMS44NTQtMTE2Ljk1IDMxLjg1NHoiPjwvcGF0aD48L3N2Zz4=" height="15" width="15" y="297.5" x="15"></image>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="307.625" x="39">CH</text>
+<svg y="327.5" x="15" id="website"></svg>
+<image image-rendering="optimizeSpeed" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzOTVhODYiIHZpZXdCb3g9IjAgMCA0OTYgNTEyIiB3aWR0aD0iNDk2IiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTMzNi41IDE2MEMzMjIgNzAuNyAyODcuOCA4IDI0OCA4cy03NCA2Mi43LTg4LjUgMTUyaDE3N3pNMTUyIDI1NmMwIDIyLjIgMS4yIDQzLjUgMy4zIDY0aDE4NS4zYzIuMS0yMC41IDMuMy00MS44IDMuMy02NHMtMS4yLTQzLjUtMy4zLTY0SDE1NS4zYy0yLjEgMjAuNS0zLjMgNDEuOC0zLjMgNjR6bTMyNC43LTk2Yy0yOC42LTY3LjktODYuNS0xMjAuNC0xNTgtMTQxLjYgMjQuNCAzMy44IDQxLjIgODQuNyA1MCAxNDEuNmgxMDh6TTE3Ny4yIDE4LjRDMTA1LjggMzkuNiA0Ny44IDkyLjEgMTkuMyAxNjBoMTA4YzguNy01Ni45IDI1LjUtMTA3LjggNDkuOS0xNDEuNnpNNDg3LjQgMTkySDM3Mi43YzIuMSAyMSAzLjMgNDIuNSAzLjMgNjRzLTEuMiA0My0zLjMgNjRoMTE0LjZjNS41LTIwLjUgOC42LTQxLjggOC42LTY0cy0zLjEtNDMuNS04LjUtNjR6TTEyMCAyNTZjMC0yMS41IDEuMi00MyAzLjMtNjRIOC42QzMuMiAyMTIuNSAwIDIzMy44IDAgMjU2czMuMiA0My41IDguNiA2NGgxMTQuNmMtMi0yMS0zLjItNDIuNS0zLjItNjR6bTM5LjUgOTZjMTQuNSA4OS4zIDQ4LjcgMTUyIDg4LjUgMTUyczc0LTYyLjcgODguNS0xNTJoLTE3N3ptMTU5LjMgMTQxLjZjNzEuNC0yMS4yIDEyOS40LTczLjcgMTU4LTE0MS42aC0xMDhjLTguOCA1Ni45LTI1LjYgMTA3LjgtNTAgMTQxLjZ6TTE5LjMgMzUyYzI4LjYgNjcuOSA4Ni41IDEyMC40IDE1OCAxNDEuNi0yNC40LTMzLjgtNDEuMi04NC43LTUwLTE0MS42aC0xMDh6Ij48L3BhdGg+PC9zdmc+" height="15" width="14.53125" y="327.5" x="15.234375"></image>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="337.625" x="39">dpo</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="337.625" x="55.6845703125">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="337.625" x="58.462890625">been</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="337.625" x="80.708984375">-</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="337.625" x="84.0390625">jammin</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="337.625" x="116.265625">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="337.625" x="119.0439453125">ch</text>
+<svg y="357.5" x="15" id="linkedin"></svg>
+<image image-rendering="optimizeSpeed" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzOTVhODYiIHZpZXdCb3g9IjAgMCA0NDggNTEyIiB3aWR0aD0iNDQ4IiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTQxNiAzMkgzMS45QzE0LjMgMzIgMCA0Ni41IDAgNjQuM3YzODMuNEMwIDQ2NS41IDE0LjMgNDgwIDMxLjkgNDgwSDQxNmMxNy42IDAgMzItMTQuNSAzMi0zMi4zVjY0LjNjMC0xNy44LTE0LjQtMzIuMy0zMi0zMi4zek0xMzUuNCA0MTZINjlWMjAyLjJoNjYuNVY0MTZ6bS0zMy4yLTI0M2MtMjEuMyAwLTM4LjUtMTcuMy0zOC41LTM4LjVTODAuOSA5NiAxMDIuMiA5NmMyMS4yIDAgMzguNSAxNy4zIDM4LjUgMzguNSAwIDIxLjMtMTcuMiAzOC41LTM4LjUgMzguNXptMjgyLjEgMjQzaC02Ni40VjMxMmMwLTI0LjgtLjUtNTYuNy0zNC41LTU2LjctMzQuNiAwLTM5LjkgMjctMzkuOSA1NC45VjQxNmgtNjYuNFYyMDIuMmg2My43djI5LjJoLjljOC45LTE2LjggMzAuNi0zNC41IDYyLjktMzQuNSA2Ny4yIDAgNzkuNyA0NC4zIDc5LjcgMTAxLjlWNDE2eiI+PC9wYXRoPjwvc3ZnPg==" height="15" width="13.125" y="357.5" x="15.9375"></image>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="367.625" x="39">Benjamin&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="367.625" x="83.4677734375">Würmli</text>
+<svg y="397.5" x="15" id="skills"></svg>
+<text fill="#395a86" font-size="18px" font-family="LiberationSans" y="415.725" x="15">Skills</text>
+<path fill="#c8c8c8" d="M 15,426.25 L 185,426.25 C 185,426.25,185,426.25,185,426.25 L 185,426.75 C 185,426.75,185,426.75,185,426.75 L 15,426.75 C 15,426.75,15,426.75,15,426.75 L 15,426.25 C 15,426.25,15,426.25,15,426.25 Z"></path>
+<svg y="436.75" x="15" id="cb1ff34c-2a4c-45c1-b640-1eeee7449388"></svg>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="446.875" x="15">PHP</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="446.875" x="35.5615234375">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="446.875" x="41.1181640625">Java</text>
+<circle fill="#395a86" r="3.75" cy="443.375" cx="141.25"></circle>
+<circle fill="#395a86" r="3.75" cy="443.375" cx="151.25"></circle>
+<circle fill="#395a86" r="3.75" cy="443.375" cx="161.25"></circle>
+<circle fill="#395a86" r="3.75" cy="443.375" cx="171.25"></circle>
+<circle fill="#c8c8c8" r="3.75" cy="443.375" cx="181.25"></circle>
+<svg y="460.5" x="15" id="afcdd2d4-92ef-4745-8bc3-40df3010ccb1"></svg>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="470.625" x="15">Python</text>
+<circle fill="#395a86" r="3.75" cy="467.125" cx="141.25"></circle>
+<circle fill="#395a86" r="3.75" cy="467.125" cx="151.25"></circle>
+<circle fill="#395a86" r="3.75" cy="467.125" cx="161.25"></circle>
+<circle fill="#395a86" r="3.75" cy="467.125" cx="171.25"></circle>
+<circle fill="#c8c8c8" r="3.75" cy="467.125" cx="181.25"></circle>
+<svg y="484.25" x="15" id="9a199903-1df0-47d4-9e34-ab189a77e48c"></svg>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="494.375" x="15">SQL</text>
+<circle fill="#395a86" r="3.75" cy="490.875" cx="141.25"></circle>
+<circle fill="#395a86" r="3.75" cy="490.875" cx="151.25"></circle>
+<circle fill="#395a86" r="3.75" cy="490.875" cx="161.25"></circle>
+<circle fill="#395a86" r="3.75" cy="490.875" cx="171.25"></circle>
+<circle fill="#395a86" r="3.75" cy="490.875" cx="181.25"></circle>
+<svg y="508" x="15" id="393b5e5b-38e3-4de4-9cee-58ae321d6d87"></svg>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="518.125" x="15">Data&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="518.125" x="38.9013671875">Visualisation</text>
+<circle fill="#395a86" r="3.75" cy="514.625" cx="141.25"></circle>
+<circle fill="#395a86" r="3.75" cy="514.625" cx="151.25"></circle>
+<circle fill="#395a86" r="3.75" cy="514.625" cx="161.25"></circle>
+<circle fill="#395a86" r="3.75" cy="514.625" cx="171.25"></circle>
+<circle fill="#c8c8c8" r="3.75" cy="514.625" cx="181.25"></circle>
+<svg y="531.75" x="15" id="c0712a39-d4af-4e5f-985e-4af2e15f21d0"></svg>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="541.875" x="15">Docker</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="541.875" x="46.6748046875">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="541.875" x="52.2314453125">CI/CD</text>
+<circle fill="#395a86" r="3.75" cy="538.375" cx="141.25"></circle>
+<circle fill="#395a86" r="3.75" cy="538.375" cx="151.25"></circle>
+<circle fill="#395a86" r="3.75" cy="538.375" cx="161.25"></circle>
+<circle fill="#395a86" r="3.75" cy="538.375" cx="171.25"></circle>
+<circle fill="#c8c8c8" r="3.75" cy="538.375" cx="181.25"></circle>
+<svg y="565.5" x="15" id="languages"></svg>
+<text fill="#395a86" font-size="18px" font-family="LiberationSans" y="583.725" x="15">Languages</text>
+<path fill="#c8c8c8" d="M 15,594.25 L 185,594.25 C 185,594.25,185,594.25,185,594.25 L 185,594.75 C 185,594.75,185,594.75,185,594.75 L 15,594.75 C 15,594.75,15,594.75,15,594.75 L 15,594.25 C 15,594.25,15,594.25,15,594.25 Z"></path>
+<svg y="604.75" x="15" id="0c974b2a-3b1e-4992-b28f-8142b1f2608e"></svg>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="614.875" x="15">German</text>
+<circle fill="#395a86" r="3.75" cy="611.375" cx="141.25"></circle>
+<circle fill="#395a86" r="3.75" cy="611.375" cx="151.25"></circle>
+<circle fill="#395a86" r="3.75" cy="611.375" cx="161.25"></circle>
+<circle fill="#395a86" r="3.75" cy="611.375" cx="171.25"></circle>
+<circle fill="#395a86" r="3.75" cy="611.375" cx="181.25"></circle>
+<svg y="628.5" x="15" id="4c1b79a5-c14b-4a16-b8ff-9321fbae3815"></svg>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="638.625" x="15">English</text>
+<circle fill="#395a86" r="3.75" cy="635.125" cx="141.25"></circle>
+<circle fill="#395a86" r="3.75" cy="635.125" cx="151.25"></circle>
+<circle fill="#395a86" r="3.75" cy="635.125" cx="161.25"></circle>
+<circle fill="#395a86" r="3.75" cy="635.125" cx="171.25"></circle>
+<circle fill="#395a86" r="3.75" cy="635.125" cx="181.25"></circle>
+<svg y="662.25" x="15" id="hobbies"></svg>
+<text fill="#395a86" font-size="18px" font-family="LiberationSans" y="680.475" x="15">Hobbies</text>
+<path fill="#c8c8c8" d="M 15,691 L 185,691 C 185,691,185,691,185,691 L 185,691.5 C 185,691.5,185,691.5,185,691.5 L 15,691.5 C 15,691.5,15,691.5,15,691.5 L 15,691 C 15,691,15,691,15,691 Z"></path>
+<svg y="701.5" x="15" id="1d8b288a-3cdb-4981-9afe-20081dec071e"></svg>
+<path fill="#395a86" d="M 15,704.625 L 22.5,704.625 C 22.5,704.625,22.5,704.625,22.5,704.625 L 22.5,712.125 C 22.5,712.125,22.5,712.125,22.5,712.125 L 15,712.125 C 15,712.125,15,712.125,15,712.125 L 15,704.625 C 15,704.625,15,704.625,15,704.625 Z"></path>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="711.625" x="27.5">Coding</text>
+<svg y="725.25" x="15" id="1a069350-b69c-419b-9a67-11a15b914910"></svg>
+<path fill="#395a86" d="M 15,728.375 L 22.5,728.375 C 22.5,728.375,22.5,728.375,22.5,728.375 L 22.5,735.875 C 22.5,735.875,22.5,735.875,22.5,735.875 L 15,735.875 C 15,735.875,15,735.875,15,735.875 L 15,728.375 C 15,728.375,15,728.375,15,728.375 Z"></path>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="735.375" x="27.5">Traveling</text>
+<svg y="749" x="15" id="d5d8aba1-a11b-4cd7-afda-fa7fb5bf87f3"></svg>
+<path fill="#395a86" d="M 15,752.125 L 22.5,752.125 C 22.5,752.125,22.5,752.125,22.5,752.125 L 22.5,759.625 C 22.5,759.625,22.5,759.625,22.5,759.625 L 15,759.625 C 15,759.625,15,759.625,15,759.625 L 15,752.125 C 15,752.125,15,752.125,15,752.125 Z"></path>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="759.125" x="27.5">Sport</text>
+<svg y="30" x="215" id="educations"></svg>
+<text fill="#395a86" font-size="18px" font-family="LiberationSans" y="48.225" x="215">Education</text>
+<path fill="#c8c8c8" d="M 215,58.75 L 580.28,58.75 C 580.28,58.75,580.28,58.75,580.28,58.75 L 580.28,59.25 C 580.28,59.25,580.28,59.25,580.28,59.25 L 215,59.25 C 215,59.25,215,59.25,215,59.25 L 215,58.75 C 215,58.75,215,58.75,215,58.75 Z"></path>
+<svg y="74.25" x="215" id="62a2e3b5-1b63-4d7d-9c0f-42c21408e489"></svg>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="84.375" x="215">Bsc</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="84.375" x="233.3447265625">.&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="84.375" x="238.9013671875">Data&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="84.375" x="263.3544921875">Science</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="84.375" x="491.344453125">Sep&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="84.375" x="512.4626171875">2022&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="84.375" x="537.48703125">-&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="84.375" x="543.5954296875">Present</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="98.125" x="215">FHNW</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="98.125" x="244.990234375">,&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="98.125" x="250.546875">Brug&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="98.125" x="274.4482421875">Windisch</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="111.875" x="235">part</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="111.875" x="252.2314453125">-</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="111.875" x="255.5615234375">time&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="111.875" x="277.2314453125">studies</text>
+<circle fill="black" r="2" cy="109.875" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="125.625" x="235">web&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="125.625" x="256.123046875">scraping</text>
+<circle fill="black" r="2" cy="123.625" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="139.375" x="235">data&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="139.375" x="257.2412109375">wrangling</text>
+<circle fill="black" r="2" cy="137.375" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="153.125" x="235">machine&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="153.125" x="275.576171875">learning</text>
+<circle fill="black" r="2" cy="151.125" cx="225"></circle>
+<svg y="180.5" x="215" id="f0deffb3-8917-45a1-86ce-8075140bf159"></svg>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="190.625" x="215">Technical&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="190.625" x="263.90625">professional&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="190.625" x="326.142578125">maturity</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="190.625" x="526.90109375">2021&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="190.625" x="551.9255078125">-&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="190.625" x="558.03390625">2022</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="204.375" x="215">Minerva</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="204.375" x="250.56640625">,&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="204.375" x="256.123046875">Aarau</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="218.125" x="215">Main&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="218.125" x="239.453125">subject</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="218.125" x="271.1376953125">:&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="218.125" x="276.6943359375">Mathematics</text>
+<svg y="231.75" x="215" id="c7b03aef-1e4b-4054-8061-eec051f059fc"></svg>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="241.875" x="215">Diving&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="241.875" x="248.3349609375">Instructor&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="241.875" x="297.783203125">and&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="241.875" x="318.33984375">First&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="241.875" x="342.7880859375">Aid&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="241.875" x="361.6748046875">Instructor</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="241.875" x="558.03390625">2018</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="255.625" x="215">Provide&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="255.625" x="251.6845703125">International</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="255.625" x="306.7236328125">,&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="255.625" x="312.2802734375">Playa&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="255.625" x="340.0732421875">del&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="255.625" x="356.1962890625">Carmen</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="235">Theory</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="266.123046875">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="271.6796875">including&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="313.9306640625">physics</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="347.275390625">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="352.83203125">physiology</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="400.0830078125">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="405.6396484375">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="269.375" x="425.1025390625">planning</text>
+<circle fill="black" r="2" cy="267.375" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="283.125" x="235">Risk&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="283.125" x="257.2216796875">management&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="283.125" x="318.369140625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="283.125" x="337.83203125">problem</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="283.125" x="373.9599609375">-</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="283.125" x="377.2900390625">solving</text>
+<circle fill="black" r="2" cy="281.125" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="235">Ability&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="264.453125">to&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="275.5712890625">teach&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="302.8125">concepts&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="345.615234375">clearly&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="377.2900390625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="396.7529296875">confidently&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="447.3388671875">to&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="458.45703125">individuals&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="507.9296875">or&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="519.599609375">groups</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="296.875" x="550.17578125">.</text>
+<circle fill="black" r="2" cy="294.875" cx="225"></circle>
+<svg y="310.5" x="215" id="e6d6ee22-927c-41e4-9729-b9a4e15033f3"></svg>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="320.625" x="215">Tiler&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="320.625" x="238.896484375">EFZ</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="320.625" x="482.4675">Aug&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="320.625" x="504.684296875">2006&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="320.625" x="529.7087109375">-&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="320.625" x="535.817109375">Aug&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="320.625" x="558.03390625">2009</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="334.375" x="215">Haltner&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="334.375" x="250.0146484375">Meister&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="334.375" x="285.576171875">GmbH</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="334.375" x="314.4677734375">,&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="334.375" x="320.0244140625">Arbon</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="348.125" x="215">Main&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="348.125" x="239.453125">school&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="348.125" x="271.1376953125">subject</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="348.125" x="302.822265625">:&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="348.125" x="308.37890625">Mathematics</text>
+<svg y="366.75" x="215" id="employment"></svg>
+<text fill="#395a86" font-size="18px" font-family="LiberationSans" y="384.975" x="215">Employment</text>
+<path fill="#c8c8c8" d="M 215,395.5 L 580.28,395.5 C 580.28,395.5,580.28,395.5,580.28,395.5 L 580.28,396 C 580.28,396,580.28,396,580.28,396 L 215,396 C 215,396,215,396,215,396 L 215,395.5 C 215,395.5,215,395.5,215,395.5 Z"></path>
+<svg y="411" x="215" id="460c0236-6257-432b-9851-c03c019c9cf9"></svg>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="421.125" x="215">Software&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="421.125" x="260.009765625">Developer</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="421.125" x="490.231171875">May&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="421.125" x="512.4626171875">2022&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="421.125" x="537.48703125">-&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="421.125" x="543.5954296875">Present</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="434.875" x="215">Bertschi</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="434.875" x="251.123046875">,&nbsp;</text>
+<text fill="#395a86" font-size="10px" font-family="LiberationSans" y="434.875" x="256.6796875">Dürrenäsch</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="235">Designed</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="277.2509765625">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="282.8076171875">developed</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="328.9599609375">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="334.5166015625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="353.9794921875">maintained&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="405.6787109375">the&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="422.3583984375">company</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="462.9345703125">’</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="465.15625">s&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="472.9345703125">internal&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="508.5107421875">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="448.625" x="527.9736328125">external&nbsp;</text>
+<circle fill="black" r="2" cy="446.625" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="235">software&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="275.5712890625">systems&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="315.01953125">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="334.482421875">homepage</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="381.7431640625">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="387.2998046875">leveraging&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="436.220703125">technologies&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="495.1513671875">such&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="519.052734375">as&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="532.392578125">Docker</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="462.375" x="564.0673828125">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="235">PHP</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="255.5615234375">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="261.1181640625">SQL</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="281.1279296875">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="286.6845703125">Node</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="310.5908203125">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="316.1474609375">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="335.6103515625">JavaScript</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="476.125" x="382.294921875">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="235">Built&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="257.2314453125">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="276.6943359375">integrated&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="323.9501953125">APIs&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="347.8466796875">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="367.3095703125">EDI&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="386.7578125">interfaces&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="432.890625">to&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="444.0087890625">streamline&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="492.9150390625">data&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="515.15625">exchange&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="489.875" x="561.3037109375">and&nbsp;</text>
+<circle fill="black" r="2" cy="487.875" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="503.625" x="235">enhance&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="503.625" x="276.1474609375">system&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="503.625" x="310.595703125">interoperability</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="503.625" x="375.6298828125">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="235">Automated&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="286.142578125">data&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="308.3837890625">analysis&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="347.2900390625">processes&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="395.64453125">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="415.107421875">Excel&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="442.3388671875">reports</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="473.4619140625">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="479.0185546875">improving&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="517.375" x="525.146484375">efficiency&nbsp;</text>
+<circle fill="black" r="2" cy="515.375" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="531.125" x="235">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="531.125" x="254.462890625">accuracy</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="531.125" x="294.4775390625">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="235">Developed&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="285.5908203125">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="305.0537109375">implemented&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="365.0830078125">unit&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="383.984375">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="403.447265625">integration&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="452.9248046875">tests&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="476.8212890625">to&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="487.939453125">ensure&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="544.875" x="521.2939453125">software&nbsp;</text>
+<circle fill="black" r="2" cy="542.875" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="558.625" x="235">reliability&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="558.625" x="276.6796875">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="558.625" x="296.142578125">maintainability</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="558.625" x="359.5068359375">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="235">Collaborated&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="294.482421875">closely&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="327.8271484375">with&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="348.388671875">customers&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="397.2900390625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="416.7529296875">product&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="452.8857421875">management&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="514.033203125">teams&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="572.375" x="544.04296875">to&nbsp;</text>
+<circle fill="black" r="2" cy="570.375" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="235">design&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="267.24609375">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="286.708984375">deliver&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="318.9453125">new&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="340.068359375">features</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="376.201171875">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="381.7578125">while&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="407.32421875">promptly&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="448.447265625">resolving&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="491.2451171875">reported&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="531.26953125">issues&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="586.125" x="562.392578125">to&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="599.875" x="235">ensure&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="599.875" x="268.3544921875">user&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="599.875" x="290.5859375">satisfaction</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="599.875" x="340.6103515625">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="235">Mentored&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="280.0244140625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="299.4873046875">supervised&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="350.625">apprentices</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="402.32421875">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="407.880859375">fostering&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="449.013671875">their&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="471.2451171875">technical&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="513.4912109375">growth</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="613.625" x="543.505859375">.</text>
+<circle fill="black" r="2" cy="611.625" cx="225"></circle>
+<svg y="627.25" x="215" id="f73b0c55-1600-431a-a422-17304e2fd373"></svg>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="637.375" x="215">Construction&nbsp;</text>
+<text font-weight="bold" fill="black" font-size="10px" font-family="LiberationSans" y="637.375" x="279.9951171875">Worker</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="637.375" x="485.7829296875">Sep&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="637.375" x="506.90109375">2009&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="637.375" x="531.9255078125">-&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="637.375" x="538.03390625">Apr&nbsp;</text>
+<text font-weight="bold" fill="#395a86" font-size="10px" font-family="LiberationSans" y="637.375" x="558.03390625">2022</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="235">Led&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="254.462890625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="273.92578125">coordinated&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="328.96484375">a&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="337.3046875">team&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="362.314453125">of&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="373.4326171875">workers&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="411.2158203125">to&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="422.333984375">complete&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="465.6884765625">construction&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="651.125" x="522.3828125">projects&nbsp;</text>
+<circle fill="black" r="2" cy="649.125" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="664.875" x="235">efficiently&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="664.875" x="279.462890625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="664.875" x="298.92578125">to&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="664.875" x="310.0439453125">a&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="664.875" x="318.3837890625">high&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="664.875" x="340.068359375">standard</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="664.875" x="378.984375">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="235">Oversaw&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="277.2314453125">project&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="310.0244140625">timelines&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="352.2607421875">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="371.7236328125">resources</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="415.6298828125">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="421.1865234375">maintaining&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="475.107421875">alignment&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="521.2451171875">with&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="678.625" x="541.806640625">budgets&nbsp;</text>
+<circle fill="black" r="2" cy="676.625" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="692.375" x="235">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="692.375" x="254.462890625">deadlines</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="692.375" x="297.275390625">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="235">Resolved&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="279.4677734375">on</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="290.5908203125">-</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="293.9208984375">site&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="312.2607421875">challenges&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="362.8515625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="382.314453125">conflicts&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="421.2158203125">swiftly</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="448.4375">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="453.994140625">demonstrating&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="706.125" x="520.1416015625">strong&nbsp;</text>
+<circle fill="black" r="2" cy="704.125" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="235">problem</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="271.1279296875">-</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="274.4580078125">solving&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="308.3642578125">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="327.8271484375">decision</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="364.5166015625">-</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="367.8466796875">making&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="402.861328125">skills</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="719.875" x="424.5263671875">.</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="235">Communicated&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="305.029296875">with&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="325.5908203125">stakeholders</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="382.2900390625">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="387.8466796875">such&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="411.748046875">as&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="425.087890625">contractors&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="477.3291015625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="496.7919921875">clients</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="525.13671875">,&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="530.693359375">to&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="733.625" x="541.8115234375">ensure&nbsp;</text>
+<circle fill="black" r="2" cy="731.625" cx="225"></circle>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="747.375" x="235">clear&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="747.375" x="259.453125">understanding&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="747.375" x="325.615234375">of&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="747.375" x="336.7333984375">project&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="747.375" x="369.5263671875">requirements&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="747.375" x="430.6640625">and&nbsp;</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="747.375" x="450.126953125">progress</text>
+<text fill="black" font-size="10px" font-family="LiberationSans" y="747.375" x="489.033203125">.</text>
+<path fill="#395a86" d="M 0,801.89 C 60,829.89,140,829.89,200,801.89 C 200,801.89,200,801.89,200,801.89 L 200,841.89 C 200,841.89,200,841.89,200,841.89 L 0,841.89 C 0,841.89,0,841.89,0,841.89 L 0,801.89 C 0,801.89,0,801.89,0,801.89 Z"></path>
+</svg>

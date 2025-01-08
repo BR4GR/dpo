@@ -24,7 +24,6 @@
         </a>
         <a href="{{ route('articles.show', ['slug' => 'wdb']) }}" class="project-card">
             <div class="project-raw-wrapper">
-
                 <iframe src="/raw/wdb" class="project-raw"></iframe>
             </div>
         </a>
