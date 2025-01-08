@@ -35,6 +35,10 @@
     </p>
 
     <p>
+        <a href="https://boards.greenhouse.io/similarweb/jobs/6199035">The Job</a>
+    </p>
+
+    <p>
         <a href="https://dpo.been-jammin.ch/data/CV-Benjamin-Wuermli.pdf">My CV</a>
     </p>
 </div>
