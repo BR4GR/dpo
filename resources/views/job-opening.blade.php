@@ -41,5 +41,9 @@
     <p>
         <a href="https://dpo.been-jammin.ch/data/CV-Benjamin-Wuermli.pdf">My CV</a>
     </p>
+
+    <p>
+        <a href="https://dpo.been-jammin.ch/data/Cover-Letter-Benjamin-Wuermli.pdf">The Cover Letter</a>
+    </p>
 </div>
 @endsection
