@@ -16,11 +16,16 @@ class ParkingEvent extends Model
         'event_time' => 'datetime',
     ];
 
+    protected $hidden = [
+        'created_at',
+        'updated_at'
+    ];
+
     // Get the current status of the parking spot
     public static function getCurrentStatus()
     {
         $lastEvent = self::orderBy('event_time', 'desc')->first();
-        
+
         if (!$lastEvent) {
             return [
                 'occupied' => false,
@@ -30,7 +35,7 @@ class ParkingEvent extends Model
         }
 
         $occupied = $lastEvent->event_type === 'arrival';
-        
+
         return [
             'occupied' => $occupied,
             'status' => $occupied ? 'occupied' : 'available',
